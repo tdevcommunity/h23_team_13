@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="2U4V5e6fzWY3xwD6GvbTRsGtvvj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/dist" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="" />
+      <created>1692198665807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692198665807</updated>
+      <workItem from="1693339383404" duration="3232000" />
+      <workItem from="1693386354276" duration="1821000" />
+      <workItem from="1693400371818" duration="8185000" />
+      <workItem from="1693489238113" duration="9035000" />
+      <workItem from="1693557152062" duration="1213000" />
+      <workItem from="1693597844669" duration="4300000" />
+      <workItem from="1693694206625" duration="2047000" />
+      <workItem from="1693733510605" duration="22075000" />
+      <workItem from="1693775419088" duration="719000" />
+      <workItem from="1693816998763" duration="4151000" />
+      <workItem from="1693933051029" duration="13133000" />
+      <workItem from="1693995696438" duration="7291000" />
+      <workItem from="1694007554862" duration="6559000" />
+      <workItem from="1694079990212" duration="7519000" />
+      <workItem from="1694191844910" duration="10784000" />
+      <workItem from="1694276034472" duration="7953000" />
+      <workItem from="1694643850464" duration="617000" />
+      <workItem from="1694680963208" duration="607000" />
+      <workItem from="1694723389924" duration="3998000" />
+      <workItem from="1694767924838" duration="2460000" />
+      <workItem from="1694943253003" duration="18169000" />
+      <workItem from="1695555844184" duration="6112000" />
+      <workItem from="1695572920819" duration="16298000" />
+      <workItem from="1696355108088" duration="5711000" />
+      <workItem from="1696411611040" duration="24000" />
+      <workItem from="1696509847747" duration="26633000" />
+      <workItem from="1696618521852" duration="7319000" />
+      <workItem from="1696705771456" duration="330000" />
+      <workItem from="1696707466207" duration="4813000" />
+      <workItem from="1696763359780" duration="11771000" />
+      <workItem from="1696779696549" duration="10703000" />
+      <workItem from="1697988435646" duration="2096000" />
+      <workItem from="1697990909290" duration="3765000" />
+      <workItem from="1697995108620" duration="15315000" />
+      <workItem from="1698070065894" duration="3076000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
