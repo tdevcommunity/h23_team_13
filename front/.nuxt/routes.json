@@ -1,0 +1,93 @@
+[
+  {
+    "name": "chat",
+    "path": "/chat",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\chat.vue",
+    "chunkName": "pages/chat",
+    "_name": "_42a8aca6"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_4e02498b"
+  },
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\profile.vue",
+    "chunkName": "pages/profile",
+    "_name": "_5c7a2d6a"
+  },
+  {
+    "name": "admin-community",
+    "path": "/admin/community",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\community.vue",
+    "chunkName": "pages/admin/community",
+    "_name": "_24241df0"
+  },
+  {
+    "name": "admin-dashboard",
+    "path": "/admin/dashboard",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\dashboard.vue",
+    "chunkName": "pages/admin/dashboard",
+    "_name": "_389f439a"
+  },
+  {
+    "name": "admin-delegues-bus",
+    "path": "/admin/delegues-bus",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\delegues-bus.vue",
+    "chunkName": "pages/admin/delegues-bus",
+    "_name": "_4cafe8ba"
+  },
+  {
+    "name": "admin-events",
+    "path": "/admin/events",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\events.vue",
+    "chunkName": "pages/admin/events",
+    "_name": "_7d2c698a"
+  },
+  {
+    "name": "admin-members",
+    "path": "/admin/members",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\members\\\\index.vue",
+    "chunkName": "pages/admin/members/index",
+    "_name": "_6deb658a"
+  },
+  {
+    "name": "admin-voyages",
+    "path": "/admin/voyages",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\voyages\\\\index.vue",
+    "chunkName": "pages/admin/voyages/index",
+    "_name": "_5dbe3f8f"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_7e6d07e3"
+  },
+  {
+    "name": "admin-members-id",
+    "path": "/admin/members/:id",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\members\\\\_id.vue",
+    "chunkName": "pages/admin/members/_id",
+    "_name": "_296d7b1c"
+  },
+  {
+    "name": "admin-voyages-id",
+    "path": "/admin/voyages/:id",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\admin\\\\voyages\\\\_id.vue",
+    "chunkName": "pages/admin/voyages/_id",
+    "_name": "_f8b64c92"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Igor\\\\Desktop\\\\Projects\\\\frontend\\\\tms\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_f74ab318"
+  }
+]
