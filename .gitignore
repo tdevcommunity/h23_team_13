@@ -71,7 +71,9 @@ front/yarn.lock
 .next
 
 # nuxt.js build output
-front/nuxt
+front/.nuxt
+
+front/.vscode
 
 
 # vuepress build output
