@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "nuxt ",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "tailwind": "npx tailwindcss -i ./static/app.css -o ./assets/css/main.css --watch"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@nuxt/babel-preset-app": "^2.16.3",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "chart.js": "^4.4.0",
+    "js-cookie": "^3.0.5",
+    "nuxt": "2.15.7",
+    "vue-moment": "^4.1.0",
+    "vue-sweetalert2": "^5.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "^3.3.2"
+  }
+}
