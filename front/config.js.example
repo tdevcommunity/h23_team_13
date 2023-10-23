@@ -1,0 +1,10 @@
+export default {
+    app_local: false,
+    app_local_url: 'http://localhost:3000',
+    app_live_url: 'https://eticket.gnassogroup.com/',
+    // app_live_url: 'https://backend.met.tg/',
+
+    app_api_base_url: 'https://eticket.gnassogroup.com/api',
+    app_api_debug_url: 'http://192.168.254.210:8000/api',
+    app_back_debug_url: 'http://192.168.254.210:8000',
+  }
