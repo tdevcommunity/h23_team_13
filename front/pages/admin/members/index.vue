@@ -41,8 +41,8 @@
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">23/04/18</span>
                   </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 <tr>
@@ -67,8 +67,8 @@
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">11/01/19</span>
                   </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 <tr>
@@ -93,8 +93,8 @@
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">19/09/17</span>
                   </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 <tr>
@@ -119,8 +119,8 @@
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">24/12/08</span>
                   </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 <tr>
@@ -145,8 +145,8 @@
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">04/10/21</span>
                   </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 <tr>
@@ -172,7 +172,7 @@
                     <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">14/09/20</span>
                   </td>
                   <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400"> Voir plus</a>
+                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 </tbody>

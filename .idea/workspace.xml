@@ -2,171 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/css/nucleo-svg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/css/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/css/soft-ui-dashboard-tailwind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/css/soft-ui-dashboard-tailwind.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/css/tooltips.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/fonts/nucleo.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/bg-profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/bruce-mars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/carousel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/carousel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/carousel-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/constructions.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved11-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved5-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved6-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/curved9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/curved-images/white-curved.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/down-arrow-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/down-arrow-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/down-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/home-decor-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/home-decor-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/home-decor-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/icons/flags/AU.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/icons/flags/BR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/icons/flags/DE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/icons/flags/GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/icons/flags/US.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/illustrations/icon-documentation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/illustrations/rocket-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/ivana-square.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/ivancik.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/kal-visuals-square.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logo-ct-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logo-ct.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/photo_2023-08-02_08-50-42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/tdev-tag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/tdev-tag1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/tdev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/tdevee.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/logos/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/marie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/pattern-lines.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/shape-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/shape-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/shape-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/wave-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/wave-up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/waves-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/shapes/waves-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/icon-sun-cloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-atlassian.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-invision.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-jira.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-slack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-spotify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-webdev.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/small-logos/logo-xd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/team-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/team-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/team-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/team-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/angular.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/bootstrap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/dribbble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/dropbox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/react.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/sketch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/slack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/spotify.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/tim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/unass.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/theme/vue.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/img/vr-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/chart-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/chart-2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/fixed-plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/nav-pills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/navbar-collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/navbar-sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/perfect-scrollbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/plugins/Chart.extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/plugins/chartjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/plugins/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/sidenav-burger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/soft-ui-dashboard-tailwind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/soft-ui-dashboard-tailwind.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/js/tooltips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/assets/svg/no-file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/components/Modal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/components/navbar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/components/sidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/layouts/main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/layouts/master.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/middleware/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/middleware/checkSession.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/middleware/isauthenticated.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/mixins/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/nuxt.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/community.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/delegues-bus.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/events.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/members/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/voyages/_id.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/voyages/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/auth/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/chat.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/plugins/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/plugins/mixing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/plugins/sweetalert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/plugins/vuetify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/static/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/static/favicon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/store/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/store/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/store/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/pages/admin/profil.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/layouts/master.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,21 +54,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -270,6 +97,8 @@
       <workItem from="1697990909290" duration="3765000" />
       <workItem from="1697995108620" duration="15315000" />
       <workItem from="1698070065894" duration="4494000" />
+      <workItem from="1698090097804" duration="3994000" />
+      <workItem from="1698158815488" duration="668000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,13 @@
 <template>
   <v-app>
-    <div class="tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-gray-900 leading-default tw-bg-gray-50 tw-text-gray-500">
-      <div class="tw-absolute tw-w-full tw-bg-gradient-to-r tw-from-[#27d576] tw-via-gray-00 tw-to-black dark:tw-hidden" style="height: 280px"></div>
+    <div class="tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-gray-900 leading-default tw-h-full tw-bg-gray-50 tw-text-gray-500">
+<!--      <div class="tw-absolute tw-w-full tw-bg-gradient-to-r tw-from-[#27d576] tw-via-gray-00 tw-to-black dark:tw-hidden" style="height: 280px"></div>-->
+      <div class="tw-absolute tw-w-full tw-bg-[#27d576] dark:tw-hidden" style="height: 280px"></div>
       <!-- sidenav  -->
       <sidebar></sidebar>
       <!-- end sidenav -->
 
-      <main class="tw-relative tw-h-full tw-max-h-screen tw-transition-all tw-duration-200 tw-ease-in-out lg:tw-ml-[250px] tw-rounded-xl">
+      <main class="tw-relative tw-h-full tw-max-h-screen tw-transition-all tw-duration-200 tw-ease-in-out lg:tw-ml-[255px] tw-rounded-xl">
         <!-- Navbar -->
         <navbar></navbar>
         <!-- end Navbar -->

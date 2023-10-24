@@ -26,9 +26,9 @@
         </li>
 
         <li class="tw-mt-0.5 tw-w-full">
-          <NuxtLink to="/admin/dashboar" class="dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
+          <NuxtLink to="/admin/profil" class="dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
             <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">
-              <i class="tw-relative tw-top-0 tw-text-sm tw-leading-normal text-gray-700 ni ni-single-02"></i>
+              <v-icon  size="22" color="green darken-1">mdi-account-child</v-icon>
             </div>
             <span class="tw-ml-1 tw-duration-300 tw-opacity-100 tw-text-gray-800 tw-pointer-events-none ease">Profile</span>
           </NuxtLink>

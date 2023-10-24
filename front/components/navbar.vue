@@ -1,6 +1,6 @@
 <template>
-  <div class="tw-relative tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-px-0 tw-py-2 tw-mx-6 tw-transition-all tw-ease-in tw-shadow-none tw-duration-250 tw-rounded-2xl lg:tw-flex-nowrap lg:tw-justify-start" navbar-main navbar-scroll="false">
-    <div class="tw-flex tw-items-center tw-justify-between tw-w-full lg:tw-px-4 tw-py-1 tw-mx-auto flex-wrap-inherit">
+  <div class="tw-relative tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-px-0 tw-py-2 tw-mx-4 lg:tw-mx-6 tw-transition-all tw-ease-in tw-shadow-none tw-duration-250 tw-rounded-2xl lg:tw-flex-nowrap lg:tw-justify-start" navbar-main navbar-scroll="false">
+    <div class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-1 tw-mx-auto tw-flex-wrap-inherit">
       <nav>
         <!-- breadcrumb -->
         <ol class="tw-flex tw-flex-wrap tw-pt-1 tw-pl-0 tw-mr-12 tw-text-black tw-bg-transparent tw-rounded-lg sm:tw-mr-16">
@@ -22,16 +22,16 @@
           </div>
         </div>
         <ul class="tw-flex tw-flex-row tw-justify-end tw-pl-0 tw-mb-0 tw-list-none md-max:tw-w-full">
-          <li class="tw-flex tw-items-center">
+          <li class="tw-hidden lg:tw-flex tw-items-center">
             <a href="../pages/sign-in.html" class="tw-block tw-px-0 tw-py-2 tw-text-sm tw-font-semibold tw-text-white tw-transition-all ease-nav-brand">
               <i class="fa fa-user sm:tw-mr-1"></i>
-              <span class="tw-hidden sm:tw-inline">Sign In</span>
+              <span class="sm:tw-inline">Sign In</span>
             </a>
           </li>
 
-          <li class="tw-flex tw-items-center tw-w-full tw-h-10 tw-px-4 xl:tw-hidden">
-            <a href="javascript:;" class="tw-p-0 tw-bg-white tw-text-sm tw-text-white tw-transition-all ease-nav-brand">
-              <v-icon color="white" class="tw-cursor-pointer" size="30">mdi-delete</v-icon>
+          <li class="tw-flex tw-items-center tw-w-full tw-h-10 lg:tw-hidden">
+            <a href="javascript:;" class="tw-p-0 tw-text-sm tw-text-white tw-transition-all ease-nav-brand">
+              <v-icon color="white" class="tw-cursor-pointer" size="30">mdi-menu-open</v-icon>
             </a>
           </li>
         </ul>
