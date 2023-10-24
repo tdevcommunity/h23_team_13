@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/profil.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/pages/auth/register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/components/navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/components/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/sidebar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/layouts/master.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/admin/members/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/index.vue" afterDir="false" />
@@ -54,6 +52,21 @@
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +111,7 @@
       <workItem from="1697995108620" duration="15315000" />
       <workItem from="1698070065894" duration="4494000" />
       <workItem from="1698090097804" duration="3994000" />
-      <workItem from="1698158815488" duration="668000" />
+      <workItem from="1698158815488" duration="5227000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <div class="tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-gray-900 leading-default tw-h-full tw-bg-gray-50 tw-text-gray-500">
+    <div class="tw-relative tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-gray-900 leading-default tw-h-full tw-bg-gray-50 tw-text-gray-500">
 <!--      <div class="tw-absolute tw-w-full tw-bg-gradient-to-r tw-from-[#27d576] tw-via-gray-00 tw-to-black dark:tw-hidden" style="height: 280px"></div>-->
-      <div class="tw-absolute tw-w-full tw-bg-[#27d576] dark:tw-hidden" style="height: 280px"></div>
+      <div class="tw-fixed tw-top-0 tw-inset-x-0 tw-w-full tw-bg-[#27d576] dark:tw-hidden" style="height: 280px"></div>
       <!-- sidenav  -->
       <sidebar></sidebar>
       <!-- end sidenav -->
