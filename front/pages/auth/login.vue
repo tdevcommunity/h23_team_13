@@ -38,16 +38,16 @@
         </p>
         <form action="" class="sm:tw-w-2/3 tw-w-full tw-px-4 lg:tw-px-0 tw-mx-auto">
           <div class="tw-pb-2 tw-pt-4">
-            <input type="email" name="email" id="email" placeholder="Email" class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-sm tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none">
+            <input type="email" name="email" id="email" placeholder="Email" class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none">
           </div>
           <div class="tw-pb-2 tw-pt-4">
-            <input class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-sm tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none" type="password" name="password" id="password" placeholder="Mot de passe">
+            <input class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none" type="password" name="password" id="password" placeholder="Mot de passe">
           </div>
           <div class="tw-text-right tw-text-sm tw-mt-2 tw-text-white hover:tw-underline">
             <a href="#">Mot de passe oublié?</a>
           </div>
-          <div class="tw-px-4 tw-pb-2 tw-pt-4">
-            <NuxtLink to="/admin/dashboard" class="hoover:tw-cursor-pointer tw-uppercase tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-full tw-bg-[#27d576] focus:tw-outline-none">Se Connecter</NuxtLink>
+          <div class="tw-pb-2 tw-pt-4">
+            <NuxtLink to="/admin/dashboard" class="hoover:tw-cursor-pointer tw-uppercase tw-block tw-w-full tw-p-3 tw-text-base tw-rounded-lg tw-bg-[#27d576] focus:tw-outline-none">Se Connecter</NuxtLink>
           </div>
 
           <div class="tw-p-4 tw-text-center tw-right-0 tw-left-0 tw-flex tw-justify-center tw-space-x-4 tw-mt-16 lg:tw-hidden ">
