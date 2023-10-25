@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/layouts/master.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/mixins/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/mixins/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/events.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/events.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/profil.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/auth/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/auth/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/auth/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/auth/register.vue" afterDir="false" />
     </list>
@@ -95,7 +104,9 @@
       <workItem from="1698070065894" duration="4494000" />
       <workItem from="1698090097804" duration="3994000" />
       <workItem from="1698158815488" duration="5227000" />
-      <workItem from="1698165880427" duration="13770000" />
+      <workItem from="1698165880427" duration="14795000" />
+      <workItem from="1698186656658" duration="4437000" />
+      <workItem from="1698250975641" duration="13745000" />
     </task>
     <servers />
   </component>

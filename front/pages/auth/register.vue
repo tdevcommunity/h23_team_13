@@ -29,49 +29,49 @@
                 <div class="tw-relative tw-z-0 tw-flex tw-flex-col tw-min-w-0 tw-break-words tw-bg-white tw-border-0 tw-shadow-xl tw-rounded-2xl tw-bg-clip-border">
                   <div class="tw-flex-auto tw-p-8">
                     <div class="tw-bg-white">
-                      <h3 class="tw-mb-8 tw-text-xl tw-uppercase tw-text-center tw-underline tw-font-bold">Formulaire d'inscription</h3>
+                      <h3 class="tw-mb-12 tw-mt-4 tw-text-xl tw-uppercase tw-text-center tw-underline tw-font-bold">Formulaire d'inscription</h3>
                       <form action="#">
                         <div class="tw-grid tw-grid-cols-6 tw-gap-6">
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
                             >
-                            <input type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
+                            <input type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Prénoms*</label
                             >
-                            <input type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
+                            <input type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email</label
+                            <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email*</label
                             >
-                            <input type="email" name="email" id="email" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
+                            <input type="email" name="email" id="email" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Phone Number</label
+                            <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Téléphone*</label
                             >
-                            <input type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
+                            <input type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Country</label
+                            <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays de résidence*</label
                             >
-                            <input type="text" name="country" id="country" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="United States" required />
+                            <input type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="United States" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adress</label
+                            <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adresse</label
                             >
-                            <input type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
+                            <input type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Birthday</label
+                            <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance</label
                             >
-                            <input type="number" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
+                            <input type="date" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Fonction</label
+                            <label class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Fonction*</label
                             >
                             <v-autocomplete
                                 class="v-text-field"
@@ -79,23 +79,25 @@
                                 outlined dense
                                 item-value="id"
                                 item-text="nom"
+                                clearable
+                                label="Votre profession"
+                                placeholder="Tapez votre profession"
                             >
                             </v-autocomplete>
                           </div>
 
-                          <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="organization" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Organization</label
-                            >
-                            <input type="text" name="organization" id="organization" class="tw-shadow-sm tw-bg-slate-100 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-green-900 tw-block tw-w-full tw-p-2.5" placeholder="Company Name" required />
-                          </div>
+<!--                          <div class="tw-col-span-6 sm:tw-col-span-3">-->
+<!--                            <label for="organization" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Organization</label-->
+<!--                            >-->
+<!--                            <input type="text" name="organization" id="organization" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Company Name" required />-->
+<!--                          </div>-->
 
-
-                          <div class="tw-w-full tw-col-span-6 tw-mt-6">
+                          <div class="tw-w-full tw-col-span-6 tw-mt-2">
                             <button class="tw-w-full tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md tw-shadow-gray-300 hover:tw-scale-[1] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
                               Soumettre
                             </button>
 
-                            <p class="tw-mt-4 tw-mb-0 tw-leading-normal tw-text-sm">Vous avez déja un compte ? <NuxtLink to="/auth/login" class="tw-font-bold tw-text-red-700">Se Connecter</NuxtLink></p>
+                            <p class="tw-mt-4 tw-mb-0 tw-leading-normal tw-text-sm tw-text-gray-800">Vous avez déja un compte ? <NuxtLink to="/auth/login" class="tw-underline tw-font-bold tw-text-red-700">Se Connecter</NuxtLink></p>
 
                           </div>
                         </div>

@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="tw-grid tw-grid-cols-1 xl:tw-grid-cols-3 xl:tw-gap-6">
-      <div class="tw-col-span-full xl:tw-col-auto">
+    <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 md:tw-gap-6">
+      <div class="tw-col-span-full md:tw-col-auto">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="sm:tw-flex xl:tw-block sm:tw-space-x-4 xl:tw-space-x-0">
-            <img class="tw-mb-2 tw-w-20 tw-h-20 tw-rounded-2xl tw-shadow-lg shadow-gray-300" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos-2x.png" alt="Jese portrait" />
+<!--            <img class="tw-mb-2 tw-w-20 tw-h-20 tw-rounded-2xl tw-shadow-lg shadow-gray-300" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos-2x.png" alt="Jese portrait" />-->
+            <img class="tw-mb-2 tw-w-20 tw-h-20 tw-rounded-2xl tw-shadow-lg shadow-gray-300" src="@/assets/img/igor.jpg" alt="Jese portrait" />
             <div>
               <h2 class="tw-text-xl tw-font-bold">Alec Thompson</h2>
               <ul class="tw-mt-2 tw-space-y-1 tw-pl-0">

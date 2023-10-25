@@ -37,7 +37,6 @@
                     label="Filtrer par technologies"
                     placeholder="Filtrer par technologies"
                     multiple
-                    chips
                     clearable
                     outlined dense
                     persistent-hint

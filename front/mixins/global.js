@@ -3,18 +3,18 @@ import config from "../config";
 export default {
     data() {
         return {
-            mini: false,
             loading: false,
-            lignes: [],
-            delegues: [],
-            etudiants: [],
-            voyages: [],
         }
     },
     mounted() {
 
     },
     methods: {
+        hiddeSidebar(){
+            console.log(this.showSidebar)
+            this.showSidebar =! this.showSidebar
+            console.log(this.showSidebar)
+        },
         backendImage(url) {
             return config.app_local ? config.app_back_debug_url + "/" + url : config.app_live_url + "/" + url
         },
@@ -27,28 +27,6 @@ export default {
                 .then(res => {
                     if(!res.data.error){
                         this.etudiants = res.data.user
-                    }
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        },
-        async getDelegues(){
-            await axios.get("/affectation")
-                .then(res => {
-                    if(!res.data.error){
-                        this.delegues = res.data.data
-                    }
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        },
-        async getLigneBus(){
-            await axios.get("/ligne")
-                .then(res => {
-                    if(!res.data.error){
-                        this.lignes = res.data.lignes
                     }
                 })
                 .catch(error => {

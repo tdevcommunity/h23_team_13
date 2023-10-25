@@ -7,9 +7,11 @@
           <li class="tw-text-sm tw-leading-normal">
             <a class="tw-opacity-50 tw-text-black" href="javascript:;">Pages</a>
           </li>
-          <li class="tw-text-sm tw-pl-2 tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Dashboard</li>
+          <li v-if="$route.path === '/admin/dashboard'" class="tw-text-sm tw-pl-2 tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Dashboard</li>
+          <li v-if="$route.path === '/admin/members'" class="tw-text-sm tw-pl-2 tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
         </ol>
-        <h6 class="tw-mb-0 tw-font-bold tw-capitalize">Dashboard</h6>
+        <h6 v-if="$route.path === '/admin/dashboard'" class="tw-mb-0 tw-font-bold tw-capitalize">Dashboard</h6>
+        <h6 v-if="$route.path === '/admin/members'" class="tw-mb-0 tw-font-bold tw-capitalize">Liste des membres</h6>
       </nav>
 
       <div class="tw-flex tw-items-center tw-justify-end tw-mt-2 tw-grow sm:tw-mt-0 sm:tw-mr-6 md:tw-mr-0 lg:basis-auto">
@@ -18,21 +20,23 @@
                 <span class="tw-text-sm ease tw-leading-5.6 tw-absolute tw-z-50 tw--ml-px tw-flex tw-h-full tw-items-center tw-whitespace-nowrap tw-rounded-lg tw-rounded-tr-none tw-rounded-br-none tw-border tw-border-r-0 tw-border-transparent tw-bg-transparent tw-py-2 tw-px-2.5 tw-text-center tw-font-normal tw-text-slate-500 tw-transition-all">
                   <i class="fas fa-search"></i>
                 </span>
-            <input type="text" class="tw-pl-9 tw-text-sm focus:shadow-primary-outline ease w-1/100 tw-leading-5.6 tw-relative tw--ml-px tw-block tw-min-w-0 tw-flex-auto tw-rounded-lg tw-border tw-border-solid tw-border-gray-300 dark:bg-slate-850 dark:tw-text-white tw-bg-white tw-bg-clip-padding tw-py-2 tw-pr-3 tw-text-gray-700 tw-transition-all placeholder:tw-text-gray-500 focus:tw-border-blue-500 focus:tw-outline-none focus:tw-transition-shadow" placeholder="Rechercher..." />
+            <input type="text" class="tw-pl-9 tw-text-sm focus:shadow-primary-outline ease tw-w-1/100 tw-leading-5 tw-relative tw--ml-px tw-block tw-min-w-0 tw-flex-auto tw-rounded-lg tw-border tw-border-solid tw-border-gray-400 tw-border-gray-300 dark:tw-text-white tw-bg-white tw-bg-clip-padding tw-py-2 tw-pr-3 tw-text-gray-700 tw-transition-all placeholder:tw-text-gray-600 focus:tw-border-green-500 focus:tw-outline-none focus:tw-transition-shadow" placeholder="Rechercher..." />
           </div>
         </div>
         <ul class="tw-flex tw-flex-row tw-justify-end tw-pl-0 tw-mb-0 tw-list-none md-max:tw-w-full">
           <li class="tw-hidden lg:tw-flex tw-items-center">
-            <a href="../pages/sign-in.html" class="tw-block tw-px-0 tw-py-2 tw-text-sm tw-font-semibold tw-text-white tw-transition-all ease-nav-brand">
-              <i class="fa fa-user sm:tw-mr-1"></i>
-              <span class="sm:tw-inline">Sign In</span>
-            </a>
+            <button class="tw-relative tw-flex tw-items-center tw-justify-center tw-bg-white tw-w-8 tw-h-8 tw-rounded-full tw-select-none">
+              <img class="tw-object-cover tw-object-center tw-w-full tw-h-full tw-rounded-full tw-ring-2 tw-ring-green-700"
+                 src="@/assets/img/igor.jpg">
+              <span aria-hidden="true" class="tw-absolute tw-top-0 tw--right-1 tw-w-2 tw-h-2 tw-bg-yellow-500 tw-rounded-full tw-ring tw-ring-white"></span>
+            </button>
           </li>
 
           <li class="tw-flex tw-items-center tw-w-full tw-h-10 lg:tw-hidden">
-            <a href="javascript:;" class="tw-p-0 tw-text-sm tw-text-white tw-transition-all ease-nav-brand">
-              <v-icon color="white" class="tw-cursor-pointer" size="30">mdi-menu-open</v-icon>
-            </a>
+            <button @click="hiddeSidebar()" class="tw-p-0 tw-text-sm tw-text-white tw-transition-all ease-nav-brand">
+              <v-icon color="white" class="tw-cursor-pointer" size="30">mdi-menu-open</v-icon> {{ showSidebar }}
+              open
+            </button>
           </li>
         </ul>
       </div>
@@ -42,7 +46,18 @@
 
 <script>
 export default {
+  data(){
+    return {
 
+    }
+  },
+  methods: {
+    // met(){
+    //   console.log(this.showSidebar)
+    //   this.showSidebar =! this.showSidebar
+    //   console.log(this.showSidebar)
+    // }
+  }
 }
 </script>
 

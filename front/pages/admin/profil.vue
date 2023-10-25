@@ -4,58 +4,22 @@
       <div class="tw-col-span-full xl:tw-col-auto">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-items-center sm:tw-flex xl:tw-block 2xl:tw-flex sm:tw-space-x-4 xl:tw-space-x-0 2xl:tw-space-x-4">
-            <img class="tw-mb-4 tw-w-28 tw-h-28 tw-rounded-lg sm:tw-mb-0 xl:tw-mb-4 2xl:tw-mb-0 tw-shadow-lg shadow-gray-300" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos-2x.png" alt="Jese picture" />
+            <img class="tw-mb-4 tw-w-28 tw-h-28 tw-rounded-lg sm:tw-mb-0 xl:tw-mb-4 2xl:tw-mb-0 tw-shadow-lg shadow-gray-300" src="@/assets/img/igor.jpg" alt="Photo de profile" />
             <div>
               <h3 class="tw-mb-1 tw-text-2xl tw-font-bold tw-text-gray-900">
                 Alec Thompson
               </h3>
-              <div class="tw-mb-4 tw-text-base tw-font-normal tw-text-gray-500">
+              <div class="tw-mb-4 tw-text-sm tw-font-normal tw-text-gray-500">
                 CEO / Co-Founder
               </div>
-              <a href="#" class="tw-inline-flex tw-items-center tw-py-2 tw-px-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">
+              <a href="#" class="tw-inline-flex tw-items-center tw-py-2 tw-px-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">
                 <svg class="tw-mr-2 tw--ml-1 tw-w-4 tw-h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path>
                   <path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path>
                 </svg>
-                Change picture
+                Changer d'image
               </a>
             </div>
-          </div>
-        </div>
-        <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
-          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">Language & Time</h3>
-          <div class="tw-mb-4">
-            <label for="settings-language" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Select language</label
-            >
-            <select id="settings-language" name="countries" class="tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:ring-fuchsia-50 focus:border-fuchsia-300 tw-block tw-w-full tw-p-2.5">
-              <option>English (US)</option>
-              <option>Italiano</option>
-              <option>Français (France)</option>
-              <option>正體字</option>
-              <option>Español (España)</option>
-              <option>Deutsch</option>
-              <option>Português (Brasil)</option>
-            </select>
-          </div>
-          <div class="tw-mb-6">
-            <label for="settings-timezone" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Time Zone</label
-            >
-            <select id="settings-timezone" name="countries" class="tw-border-gray-300 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:ring-fuchsia-50 focus:border-fuchsia-300 tw-block tw-w-full tw-p-2.5">
-              <option>GMT+0 Greenwich Mean Time (GMT)</option>
-              <option>GMT+1 Central European Time (CET)</option>
-              <option>GMT+2 Eastern European Time (EET)</option>
-              <option>GMT+3 Moscow Time (MSK)</option>
-              <option>GMT+5 Pakistan Standard Time (PKT)</option>
-              <option>GMT+8 China Standard Time (CST)</option>
-              <option>
-                GMT+10 Eastern Australia Standard Time (AEST)
-              </option>
-            </select>
-          </div>
-          <div>
-            <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-              Save all
-            </button>
           </div>
         </div>
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
@@ -120,7 +84,7 @@ Not connected
 </span>
                   </div>
                   <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
+                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
                     >
                   </div>
                 </div>
@@ -141,15 +105,15 @@ Not connected
 </span>
                   </div>
                   <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
+                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
                     >
                   </div>
                 </div>
               </li>
             </ul>
             <div>
-              <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-                Save all
+              <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
+                Sauvegarder
               </button>
             </div>
           </div>
@@ -206,58 +170,10 @@ Not connected
                   </div>
                 </div>
               </li>
-              <li class="tw-py-4">
-                <div class="tw-flex tw-justify-between xl:tw-block 2xl:tw-flex align-center 2xl:tw-space-x-4">
-                  <div class="tw-flex tw-space-x-4 xl:tw-mb-4 2xl:tw-mb-0">
-                    <div>
-                      <img class="tw-w-6 tw-h-6 tw-rounded-full" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/thomas-lean.png" alt="Thomas image" />
-                    </div>
-                    <div class="tw-flex-1 tw-min-w-0">
-                      <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-leading-none tw-truncate tw-mb-0.5">
-                        Thomas Lean
-                      </p>
-                      <p class="tw-mb-1 tw-text-sm tw-font-normal text-fuchsia-600 tw-truncate">
-                        Texas, USA
-                      </p>
-                      <p class="tw-text-xs tw-font-medium tw-text-gray-500">
-                        Last seen: 1 hour ago
-                      </p>
-                    </div>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center tw-w-auto xl:tw-w-full 2xl:tw-w-auto">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-w-full tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Disconnect</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li class="tw-pt-4">
-                <div class="tw-flex tw-justify-between xl:tw-block 2xl:tw-flex align-center 2xl:tw-space-x-4">
-                  <div class="tw-flex tw-space-x-4 xl:tw-mb-4 2xl:tw-mb-0">
-                    <div>
-                      <img class="tw-w-6 tw-h-6 tw-rounded-full" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/lana-byrd.png" alt="Lana image" />
-                    </div>
-                    <div class="tw-flex-1 tw-min-w-0">
-                      <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-leading-none tw-truncate tw-mb-0.5">
-                        Lana Byrd
-                      </p>
-                      <p class="tw-mb-1 tw-text-sm tw-font-normal text-fuchsia-600 tw-truncate">
-                        Texas, USA
-                      </p>
-                      <p class="tw-text-xs tw-font-medium tw-text-gray-500">
-                        Last seen: 1 hour ago
-                      </p>
-                    </div>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center tw-w-auto xl:tw-w-full 2xl:tw-w-auto">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-w-full tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Disconnect</a
-                    >
-                  </div>
-                </div>
-              </li>
             </ul>
             <div>
-              <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-                Save all
+              <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
+                Sauvegarder
               </button>
             </div>
           </div>
@@ -271,66 +187,66 @@ Not connected
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">First Name</label
                 >
-                <input type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
+                <input type="text" name="first-name" id="first-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Last Name</label
                 >
-                <input type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
+                <input type="text" name="last-name" id="last-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Country</label
                 >
-                <input type="text" name="country" id="country" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
+                <input type="text" name="country" id="country" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="city" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">City</label
                 >
-                <input type="text" name="city" id="city" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
+                <input type="text" name="city" id="city" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adress</label
                 >
-                <input type="text" name="adress" id="adress" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. California" required />
+                <input type="text" name="adress" id="adress" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. California" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email</label
                 >
-                <input type="email" name="email" id="email" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
+                <input type="email" name="email" id="email" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Phone Number</label
                 >
-                <input type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
+                <input type="number" name="phone-number" id="phone-number" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Birthday</label
                 >
-                <input type="number" name="birthday" id="birthday" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
+                <input type="number" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="organization" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Organization</label
                 >
-                <input type="text" name="organization" id="organization" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Company Name" required />
+                <input type="text" name="organization" id="organization" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Company Name" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="role" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Role</label
                 >
-                <input type="text" name="role" id="role" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="React Developer" required />
+                <input type="text" name="role" id="role" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="React Developer" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="department" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Department</label
                 >
-                <input type="text" name="department" id="department" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Development" required />
+                <input type="text" name="department" id="department" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Development" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="zip-code" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Zip/postal code</label
                 >
-                <input type="number" name="zip-code" id="zip-code" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="123456" required />
+                <input type="number" name="zip-code" id="zip-code" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="123456" required />
               </div>
               <div class="tw-col-span-6 sm:col-full">
-                <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
-                  Save all
+                <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
+                  Sauvegarder
                 </button>
               </div>
             </div>
@@ -343,17 +259,17 @@ Not connected
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="current-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Current password</label
                 >
-                <input type="text" name="current-password" id="current-password" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
+                <input type="text" name="current-password" id="current-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="new-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">New password</label
                 >
-                <input type="text" name="new-password" id="new-password" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
+                <input type="text" name="new-password" id="new-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="confirm-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Confirm password</label
                 >
-                <input type="text" name="confirm-password" id="confirm-password" class="tw-shadow-sm tw-border tw-border-gray-800 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg focus:tw-ring-2 focus:tw-ring-fuchsia-50 focus:tw-border-green-600 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
+                <input type="text" name="confirm-password" id="confirm-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
               <div class="tw-col-span-full">
                 <div class="tw-text-sm tw-font-medium">
@@ -379,70 +295,16 @@ Not connected
                 </ul>
               </div>
               <div class="tw-col-span-6 sm:col-full">
-                <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
-                  Save all
+                <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
+                  Sauvegarder
                 </button>
               </div>
             </div>
           </form>
         </div>
-        <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-4 xl:tw-mb-0">
-          <div class="tw-flow-root">
-            <h3 class="tw-text-xl tw-font-bold">Sessions</h3>
-            <ul class="tw-divide-y tw-divide-gray-200">
-              <li class="tw-py-4">
-                <div class="tw-flex tw-items-center tw-space-x-4">
-                  <div class="tw-flex-shrink-0">
-                    <svg class="tw-w-6 tw-h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <div class="tw-flex-1 tw-min-w-0">
-                    <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-                      California 123.123.123.123
-                    </p>
-                    <p class="tw-text-sm tw-font-normal tw-text-gray-500 tw-truncate">
-                      Chrome on macOS
-                    </p>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Revoke</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li class="tw-pt-4 tw-pb-6">
-                <div class="tw-flex tw-items-center tw-space-x-4">
-                  <div class="tw-flex-shrink-0">
-                    <svg class="tw-w-6 tw-h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <div class="tw-flex-1 tw-min-w-0">
-                    <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-                      Rome 24.456.355.98
-                    </p>
-                    <p class="tw-text-sm tw-font-normal tw-text-gray-500 tw-truncate">
-                      Safari on iPhone
-                    </p>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Revoke</a
-                    >
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div>
-              <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-                See more
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="tw-grid tw-grid-cols-1 tw-px-4 xl:tw-grid-cols-2 xl:tw-gap-6">
+    <div class="tw-grid tw-grid-cols-1 lg:tw-gap-6">
       <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-4 xl:tw-mb-0">
         <div class="tw-flow-root">
           <h3 class="tw-text-xl tw-font-bold">Alerts & Notifications</h3>
@@ -451,27 +313,14 @@ Not connected
           </p>
           <div class="tw-divide-y tw-divide-gray-200">
 
-            <div class="tw-flex tw-justify-between tw-items-center tw-py-4">
-              <div class="tw-flex tw-flex-col tw-flex-grow">
-                <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
-                  Company News
-                </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
-                  Get Themesberg news, announcements, and product updates
-                </div>
-              </div>
-              <label for="company-news" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
-                <input type="checkbox" id="company-news" class="tw-sr-only" />
-                <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
-              </label>
-            </div>
+
 
             <div class="tw-flex tw-justify-between tw-items-center tw-py-4">
               <div class="tw-flex tw-flex-col tw-flex-grow">
                 <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
                   Account Activity
                 </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
+                <div class="tw-text-sm tw-font-normal tw-text-gray-500">
                   Get important notifications about you or activity you've
                   missed
                 </div>
@@ -487,7 +336,7 @@ Not connected
                 <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
                   Meetups Near You
                 </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
+                <div class="tw-text-sm tw-font-normal tw-text-gray-500">
                   Get an email when a Dribbble Meetup is posted close to
                   my location
                 </div>
@@ -503,7 +352,7 @@ Not connected
                 <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
                   New Messages
                 </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
+                <div class="tw-text-sm tw-font-normal tw-text-gray-500">
                   Get Themsberg news, announcements, and product updates
                 </div>
               </div>
@@ -512,88 +361,25 @@ Not connected
                 <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
               </label>
             </div>
-          </div>
-          <div class="tw-mt-6">
-            <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-              Save all
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-4 xl:tw-mb-0">
-        <div class="tw-flow-root">
-          <h3 class="tw-text-xl tw-font-bold">Email Notifications</h3>
-          <p class="tw-text-sm tw-font-normal tw-text-gray-500">
-            You can set up Themesberg to get email notifications
-          </p>
-          <div class="tw-divide-y tw-divide-gray-200">
 
             <div class="tw-flex tw-justify-between tw-items-center tw-py-4">
               <div class="tw-flex tw-flex-col tw-flex-grow">
                 <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
-                  Rating reminders
+                  Company News
                 </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
-                  Send an email reminding me to rate an item a week after
-                  purchase
-                </div>
-              </div>
-              <label for="rating-reminders" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
-                <input type="checkbox" id="rating-reminders" class="tw-sr-only" />
-                <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
-              </label>
-            </div>
-
-            <div class="tw-flex tw-justify-between tw-items-center tw-py-4">
-              <div class="tw-flex tw-flex-col tw-flex-grow">
-                <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
-                  Item update notifications
-                </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
-                  Send user and product notifications for you
+                <div class="tw-text-sm tw-font-normal tw-text-gray-500">
+                  Get Themesberg news, announcements, and product updates
                 </div>
               </div>
-              <label for="item-update" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
-                <input type="checkbox" id="item-update" class="tw-sr-only" checked />
-                <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
-              </label>
-            </div>
-
-            <div class="tw-flex tw-justify-between tw-items-center tw-py-4">
-              <div class="tw-flex tw-flex-col tw-flex-grow">
-                <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
-                  Item comment notifications
-                </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
-                  Send me an email when someone comments on one of my
-                  items
-                </div>
-              </div>
-              <label for="item-comment" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
-                <input type="checkbox" id="item-comment" class="tw-sr-only" checked />
-                <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
-              </label>
-            </div>
-
-            <div class="tw-flex tw-justify-between tw-items-center tw-pt-4">
-              <div class="tw-flex tw-flex-col tw-flex-grow">
-                <div class="tw-text-lg tw-font-semibold tw-text-gray-900">
-                  Buyer review notifications
-                </div>
-                <div class="tw-text-base tw-font-normal tw-text-gray-500">
-                  Send me an email when someone leaves a review with their
-                  rating
-                </div>
-              </div>
-              <label for="buyer-rev" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
-                <input type="checkbox" id="buyer-rev" class="tw-sr-only" />
+              <label for="company-news" class="tw-flex tw-relative tw-items-center tw-cursor-pointer">
+                <input type="checkbox" id="company-news" class="tw-sr-only" />
                 <span class="tw-w-11 tw-h-6 tw-bg-gray-200 tw-rounded-full tw-border-2 tw-border-gray-200 toggle-bg"></span>
               </label>
             </div>
           </div>
           <div class="tw-mt-6">
-            <button class="tw-text-white tw-bg-gradient-to-br tw-from-pink-500 to-voilet-500 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-              Save all
+            <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
+              Sauvegarder
             </button>
           </div>
         </div>

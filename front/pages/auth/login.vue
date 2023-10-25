@@ -43,9 +43,13 @@
           <div class="tw-pb-2 tw-pt-4">
             <input class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none" type="password" name="password" id="password" placeholder="Mot de passe">
           </div>
-          <div class="tw-text-right tw-text-sm tw-mt-2 tw-text-white hover:tw-underline">
-            <a href="#">Mot de passe oublié?</a>
+          <div class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mt-2">
+            <NuxtLink to="/auth/register" class="tw-text-xs tw-text-white hover:tw-underline">Je n'ai pas encore de compte!</NuxtLink>
+            <div class="tw-text-right tw-text-xs tw-text-white hover:tw-underline">
+              <a href="#">Mot de passe oublié?</a>
+            </div>
           </div>
+
           <div class="tw-pb-2 tw-pt-4">
             <NuxtLink to="/admin/dashboard" class="hoover:tw-cursor-pointer tw-uppercase tw-block tw-w-full tw-p-3 tw-text-base tw-rounded-lg tw-bg-[#27d576] focus:tw-outline-none">Se Connecter</NuxtLink>
           </div>
