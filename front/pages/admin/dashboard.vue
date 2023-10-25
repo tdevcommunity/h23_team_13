@@ -9,17 +9,14 @@
             <div class="tw-flex tw-flex-row tw--mx-3">
               <div class="tw-flex-none tw-w-2/3 tw-max-w-full tw-px-3">
                 <div>
-                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Today's Money</p>
-                  <h5 class="tw-mb-2 tw-font-bold tw-text-sm dark:tw-text-white">$53,000</h5>
-                  <p class="tw-mb-0 dark:tw-text-white tw-whitespace-nowrap tw-text-sm dark:tw-opacity-60">
-                    <span class="tw-text-sm tw-font-bold tw-leading-normal text-emerald-500">+55%</span>
-                    since yesterday
-                  </p>
+                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Total membres</p>
+                  <h5 class="tw-mt-2 tw-mb-2 tw-text-lg tw-font-bold dark:tw-text-white">3,452</h5>
+
                 </div>
               </div>
               <div class="tw-px-3 tw-text-right basis-1/3">
                 <div class="tw-inline-block tw-w-12 tw-h-12 tw-text-center rounded-circle tw-bg-gradient-to-tl tw-from-blue-500 tw-to-violet-500">
-                  <i class="ni tw-leading-none ni-money-coins tw-text-lg tw-relative tw-top-3.5 tw-text-white"></i>
+                  <v-icon class="ni tw-leading-none ni-money-coins tw-text-lg tw-relative tw-top-2 tw-text-white" size="40">mdi-account-group</v-icon>
                 </div>
               </div>
             </div>
@@ -34,17 +31,14 @@
             <div class="tw-flex tw-flex-row tw--mx-3">
               <div class="tw-flex-none tw-w-2/3 tw-max-w-full tw-px-3">
                 <div>
-                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Today's Users</p>
-                  <h5 class="tw-mb-2 tw-font-bold tw-text-sm dark:tw-text-white">2,300</h5>
-                  <p class="tw-mb-0 dark:tw-text-white tw-whitespace-nowrap tw-text-sm dark:tw-opacity-60">
-                    <span class="tw-text-sm tw-font-bold tw-leading-normal text-emerald-500">+3%</span>
-                    since last week
-                  </p>
+                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Total recrutement</p>
+                  <h5 class="tw-mt-2 tw-mb-2 tw-text-lg tw-font-bold dark:tw-text-white">2,300</h5>
+
                 </div>
               </div>
               <div class="tw-px-3 tw-text-right basis-1/3">
                 <div class="tw-inline-block tw-w-12 tw-h-12 tw-text-center rounded-circle tw-bg-gradient-to-tl tw-from-red-600 tw-to-orange-600">
-                  <i class="ni tw-leading-none ni-world tw-text-lg tw-relative tw-top-3.5 tw-text-white"></i>
+                  <v-icon class="ni tw-leading-none ni-world tw-text-lg tw-relative tw-top-2 tw-text-white" size="40">mdi-podium-bronze</v-icon>
                 </div>
               </div>
             </div>
@@ -59,17 +53,14 @@
             <div class="tw-flex tw-flex-row tw--mx-3">
               <div class="tw-flex-none tw-w-2/3 tw-max-w-full tw-px-3">
                 <div>
-                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">New Clients</p>
-                  <h5 class="tw-mb-2 tw-font-bold tw-text-sm dark:tw-text-white">+3,462</h5>
-                  <p class="tw-mb-0 dark:tw-text-white tw-whitespace-nowrap tw-text-sm dark:tw-opacity-60">
-                    <span class="tw-text-sm tw-font-bold tw-leading-normal tw-text-red-600">-2%</span>
-                    since last quarter
-                  </p>
+                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Total spécialités</p>
+                  <h5 class="tw-mt-2 tw-mb-2 tw-text-lg tw-font-bold dark:tw-text-white">265</h5>
+
                 </div>
               </div>
               <div class="tw-px-3 tw-text-right basis-1/3">
-                <div class="tw-inline-block tw-w-12 tw-h-12 tw-text-center rounded-circle tw-bg-gradient-to-tl from-emerald-500 tw-to-teal-400">
-                  <i class="ni tw-leading-none ni-paper-diploma tw-text-lg tw-relative tw-top-3.5 tw-text-white"></i>
+                <div class="tw-inline-block tw-w-12 tw-h-12 tw-text-center rounded-circle tw-bg-gradient-to-tl tw-from-emerald-500 tw-to-teal-400">
+                  <v-icon class="ni tw-leading-none ni-paper-diploma tw-text-lg tw-relative tw-top-3 tw-text-white" size="40">mdi-school</v-icon>
                 </div>
               </div>
             </div>
@@ -84,17 +75,14 @@
             <div class="tw-flex tw-flex-row tw--mx-3">
               <div class="tw-flex-none tw-w-2/3 tw-max-w-full tw-px-3">
                 <div>
-                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Sales</p>
-                  <h5 class="tw-mb-2 tw-font-bold tw-text-sm dark:tw-text-white">$103,430</h5>
-                  <p class="tw-mb-0 dark:tw-text-white tw-whitespace-nowrap tw-text-sm dark:tw-opacity-60">
-                    <span class="tw-text-sm tw-font-bold tw-leading-normal text-emerald-500">+5%</span>
-                    than last month
-                  </p>
+                  <p class="tw-mb-0 tw-font-sans tw-text-xs tw-font-semibold tw-leading-normal tw-uppercase dark:tw-text-white dark:tw-opacity-60">Total évenements</p>
+                  <h5 class="tw-mt-2 tw-mb-2 tw-text-lg tw-font-bold dark:tw-text-white">430</h5>
+
                 </div>
               </div>
               <div class="tw-px-3 tw-text-right basis-1/3">
                 <div class="tw-inline-block tw-w-12 tw-h-12 tw-text-center rounded-circle tw-bg-gradient-to-tl tw-from-orange-500 tw-to-yellow-500">
-                  <i class="ni tw-leading-none ni-cart tw-text-lg tw-relative tw-top-3.5 tw-text-white"></i>
+                  <v-icon class="ni tw-leading-none ni-cart tw-text-lg tw-relative tw-top-3 tw-text-white" size="40">mdi-calendar-text</v-icon>
                 </div>
               </div>
             </div>
@@ -245,71 +233,135 @@
         </div>
       </div>
       <div class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 lg:tw-w-5/12 lg:tw-flex-none">
-        <div class="tw-border-black/12.5 tw-shadow-xl dark:bg-slate-850 dark:shadow-dark-xl tw-relative tw-flex tw-min-w-0 tw-flex-col tw-break-words tw-rounded-2xl tw-border-0 tw-border-solid tw-bg-white tw-bg-clip-border">
-          <div class="tw-p-4 tw-pb-0 rounded-t-4">
-            <h6 class="tw-mb-0 dark:tw-text-white">Categories</h6>
-          </div>
-          <div class="tw-flex-auto tw-p-4">
-            <ul class="tw-flex tw-flex-col tw-pl-0 tw-mb-0 tw-rounded-lg">
-              <li class="tw-relative tw-flex tw-justify-between tw-py-2 tw-pr-4 tw-mb-2 tw-border-0 tw-rounded-t-lg tw-rounded-xl text-inherit">
-                <div class="tw-flex tw-items-center">
-                  <div class="tw-inline-block tw-w-8 tw-h-8 tw-mr-4 tw-text-center tw-text-black tw-bg-center tw-shadow-sm tw-fill-current stroke-none tw-bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:tw-bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 tw-rounded-xl">
-                    <i class="tw-text-white ni ni-mobile-button tw-relative tw-top-0.75 text-xxs"></i>
+        <div class="tw-flex-auto tw-p-4">
+          <div class="tw-w-full xl:tw-w-4/12 tw-px-4">
+            <div class="tw-relative tw-flex tw-flex-col tw-min-w-0 tw-break-words tw-bg-white tw-w-full tw-mb-6 tw-shadow-lg tw-rounded">
+              <div class="tw-rounded-t tw-mb-0 tw-px-4 tw-py-3 tw-border-0">
+                <div class="tw-flex tw-flex-wrap tw-items-center">
+                  <div class="tw-relative tw-w-full tw-px-4 tw-max-w-full tw-flex-grow tw-flex-1">
+                    <h3 class="tw-font-semibold tw-text-base text-blueGray-700">
+                      Social traffic
+                    </h3>
                   </div>
-                  <div class="tw-flex tw-flex-col">
-                    <h6 class="tw-mb-1 tw-text-sm tw-leading-normal text-slate-700 dark:tw-text-white">Devices</h6>
-                    <span class="tw-text-xs tw-leading-tight dark:text-white/80">250 in stock, <span class="tw-font-semibold">346+ sold</span></span>
-                  </div>
-                </div>
-                <div class="tw-flex">
-                  <button class="group tw-ease-in leading-pro tw-text-xs rounded-3.5xl tw-p-1.2 tw-h-6.5 tw-w-6.5 tw-mx-0 tw-my-auto tw-inline-block tw-cursor-pointer tw-border-0 tw-bg-transparent tw-text-center tw-align-middle tw-font-bold text-slate-700 tw-shadow-none tw-transition-all dark:tw-text-white"><i class="ni ease-bounce text-2xs group-hover:tw-translate-x-1.25 ni-bold-right tw-transition-all tw-duration-200" aria-hidden="true"></i></button>
-                </div>
-              </li>
-              <li class="tw-relative tw-flex tw-justify-between tw-py-2 tw-pr-4 tw-mb-2 tw-border-0 tw-rounded-xl text-inherit">
-                <div class="tw-flex tw-items-center">
-                  <div class="tw-inline-block tw-w-8 tw-h-8 tw-mr-4 tw-text-center tw-text-black tw-bg-center tw-shadow-sm tw-fill-current stroke-none tw-bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:tw-bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 tw-rounded-xl">
-                    <i class="tw-text-white ni ni-tag tw-relative tw-top-0.75 text-xxs"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col">
-                    <h6 class="tw-mb-1 tw-text-sm tw-leading-normal text-slate-700 dark:tw-text-white">Tickets</h6>
-                    <span class="tw-text-xs tw-leading-tight dark:text-white/80">123 closed, <span class="tw-font-semibold">15 open</span></span>
+                  <div class="tw-relative tw-w-full tw-px-4 tw-max-w-full tw-flex-grow tw-flex-1 tw-text-right">
+                    <button class="tw-bg-indigo-500 tw-text-white active:tw-bg-indigo-600 tw-text-xs tw-font-bold tw-uppercase tw-px-3 tw-py-1 tw-rounded tw-outline-none focus:tw-outline-none tw-mr-1 tw-mb-1 tw-ease-linear tw-transition-all tw-duration-150" type="button">
+                      See all
+                    </button>
                   </div>
                 </div>
-                <div class="tw-flex">
-                  <button class="group tw-ease-in leading-pro tw-text-xs rounded-3.5xl tw-p-1.2 tw-h-6.5 tw-w-6.5 tw-mx-0 tw-my-auto tw-inline-block tw-cursor-pointer tw-border-0 tw-bg-transparent tw-text-center tw-align-middle tw-font-bold text-slate-700 tw-shadow-none tw-transition-all dark:tw-text-white"><i class="ni ease-bounce text-2xs group-hover:tw-translate-x-1.25 ni-bold-right tw-transition-all tw-duration-200" aria-hidden="true"></i></button>
-                </div>
-              </li>
-              <li class="tw-relative tw-flex tw-justify-between tw-py-2 tw-pr-4 tw-mb-2 tw-border-0 tw-rounded-b-lg tw-rounded-xl text-inherit">
-                <div class="tw-flex tw-items-center">
-                  <div class="tw-inline-block tw-w-8 tw-h-8 tw-mr-4 tw-text-center tw-text-black tw-bg-center tw-shadow-sm tw-fill-current stroke-none tw-bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:tw-bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 tw-rounded-xl">
-                    <i class="tw-text-white ni ni-box-2 tw-relative tw-top-0.75 text-xxs"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col">
-                    <h6 class="tw-mb-1 tw-text-sm tw-leading-normal text-slate-700 dark:tw-text-white">Error logs</h6>
-                    <span class="tw-text-xs tw-leading-tight dark:text-white/80">1 is active, <span class="tw-font-semibold">40 closed</span></span>
-                  </div>
-                </div>
-                <div class="tw-flex">
-                  <button class="group tw-ease-in leading-pro tw-text-xs rounded-3.5xl tw-p-1.2 tw-h-6.5 tw-w-6.5 tw-mx-0 tw-my-auto tw-inline-block tw-cursor-pointer tw-border-0 tw-bg-transparent tw-text-center tw-align-middle tw-font-bold text-slate-700 tw-shadow-none tw-transition-all dark:tw-text-white"><i class="ni ease-bounce text-2xs group-hover:tw-translate-x-1.25 ni-bold-right tw-transition-all tw-duration-200" aria-hidden="true"></i></button>
-                </div>
-              </li>
-              <li class="tw-relative tw-flex tw-justify-between tw-py-2 tw-pr-4 tw-border-0 tw-rounded-b-lg tw-rounded-xl text-inherit">
-                <div class="tw-flex tw-items-center">
-                  <div class="tw-inline-block tw-w-8 tw-h-8 tw-mr-4 tw-text-center tw-text-black tw-bg-center tw-shadow-sm tw-fill-current stroke-none tw-bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:tw-bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 tw-rounded-xl">
-                    <i class="tw-text-white ni ni-satisfied tw-relative tw-top-0.75 text-xxs"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col">
-                    <h6 class="tw-mb-1 tw-text-sm tw-leading-normal text-slate-700 dark:tw-text-white">Happy users</h6>
-                    <span class="tw-text-xs tw-leading-tight dark:text-white/80"><span class="tw-font-semibold">+ 430 </span></span>
-                  </div>
-                </div>
-                <div class="tw-flex">
-                  <button class="group tw-ease-in leading-pro tw-text-xs rounded-3.5xl tw-p-1.2 tw-h-6.5 tw-w-6.5 tw-mx-0 tw-my-auto tw-inline-block tw-cursor-pointer tw-border-0 tw-bg-transparent tw-text-center tw-align-middle tw-font-bold text-slate-700 tw-shadow-none tw-transition-all dark:tw-text-white"><i class="ni ease-bounce text-2xs group-hover:tw-translate-x-1.25 ni-bold-right tw-transition-all tw-duration-200" aria-hidden="true"></i></button>
-                </div>
-              </li>
-            </ul>
+              </div>
+              <div class="tw-block tw-w-full tw-overflow-x-auto">
+
+                <table class="tw-items-center tw-w-full tw-bg-transparent tw-border-collapse">
+                  <thead class="thead-light">
+                  <tr>
+                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left">
+                      Referral
+                    </th>
+                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left">
+                      Visitors
+                    </th>
+                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left min-w-140-px"></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
+                      Facebook
+                    </th>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      1,480
+                    </td>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      <div class="tw-flex tw-items-center">
+                        <span class="tw-mr-2">60%</span>
+                        <div class="tw-relative tw-w-full">
+                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-red-200">
+                            <div style="width: 60%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center tw-bg-red-500"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
+                      Facebook
+                    </th>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      5,480
+                    </td>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      <div class="tw-flex tw-items-center">
+                        <span class="tw-mr-2">70%</span>
+                        <div class="tw-relative tw-w-full">
+                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded bg-emerald-200">
+                            <div style="width: 70%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-emerald-500"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
+                      Google
+                    </th>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      4,807
+                    </td>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      <div class="tw-flex tw-items-center">
+                        <span class="tw-mr-2">80%</span>
+                        <div class="tw-relative tw-w-full">
+                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-purple-200">
+                            <div style="width: 80%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center tw-bg-purple-500"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
+                      Instagram
+                    </th>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      3,678
+                    </td>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      <div class="tw-flex tw-items-center">
+                        <span class="tw-mr-2">75%</span>
+                        <div class="tw-relative tw-w-full">
+                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded bg-lightBlue-200">
+                            <div style="width: 75%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-lightBlue-500"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
+                      twitter
+                    </th>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      2,645
+                    </td>
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      <div class="tw-flex tw-items-center">
+                        <span class="tw-mr-2">30%</span>
+                        <div class="tw-relative tw-w-full">
+                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-orange-200">
+                            <div style="width: 30%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-emerald-500"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
