@@ -93,7 +93,7 @@
 
     <!-- cards row 2 -->
     <div class="tw-flex tw-flex-wrap tw-mt-6 tw--mx-3">
-      <div class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 tw-mb-6 lg:tw-mb-0 lg:tw-w-7/12 lg:tw-flex-none">
+      <div class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 tw-mb-6 lg:tw-mb-0 lg:tw-w-6/12 lg:tw-flex-none">
         <div class="tw-relative tw-flex tw-flex-col tw-min-w-0 tw-break-words tw-bg-white tw-border-0 tw-border-solid tw-shadow-xl dark:bg-slate-850 dark:shadow-dark-xl dark:bg-gray-950 tw-border-black-125 tw-rounded-2xl tw-bg-clip-border">
           <div class="tw-p-4 tw-pb-0 tw-mb-0 rounded-t-4">
             <div class="tw-flex tw-justify-between">
@@ -232,124 +232,47 @@
           </div>
         </div>
       </div>
-      <div class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 lg:tw-w-5/12 lg:tw-flex-none">
-        <div class="tw-flex-auto tw-p-4">
-          <div class="tw-w-full xl:tw-w-4/12 tw-px-4">
-            <div class="tw-relative tw-flex tw-flex-col tw-min-w-0 tw-break-words tw-bg-white tw-w-full tw-mb-6 tw-shadow-lg tw-rounded">
-              <div class="tw-rounded-t tw-mb-0 tw-px-4 tw-py-3 tw-border-0">
-                <div class="tw-flex tw-flex-wrap tw-items-center">
-                  <div class="tw-relative tw-w-full tw-px-4 tw-max-w-full tw-flex-grow tw-flex-1">
-                    <h3 class="tw-font-semibold tw-text-base text-blueGray-700">
-                      Social traffic
-                    </h3>
-                  </div>
-                  <div class="tw-relative tw-w-full tw-px-4 tw-max-w-full tw-flex-grow tw-flex-1 tw-text-right">
-                    <button class="tw-bg-indigo-500 tw-text-white active:tw-bg-indigo-600 tw-text-xs tw-font-bold tw-uppercase tw-px-3 tw-py-1 tw-rounded tw-outline-none focus:tw-outline-none tw-mr-1 tw-mb-1 tw-ease-linear tw-transition-all tw-duration-150" type="button">
-                      See all
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="tw-block tw-w-full tw-overflow-x-auto">
 
+
+      <div class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 lg:tw-w-6/12 lg:tw-flex-none">
+        <div class="tw-border-black/12.5 tw-shadow-xl dark:bg-slate-850 dark:shadow-dark-xl tw-relative tw-flex tw-min-w-0 tw-flex-col tw-break-words tw-rounded-2xl tw-border-0 tw-border-solid tw-bg-white tw-bg-clip-border">
+          <div class="tw-p-4 tw-pb-0 tw-mb-2 tw-rounded-t-4 tw-flex tw-justify-between tw-w-full">
+            <h6 class="tw-mb-0 dark:tw-text-white">Liste des spécialités</h6>
+            <button class="tw-bg-indigo-500 tw-text-white tw-text-xs tw-font-bold tw-px-3 tw-py-1 tw-rounded tw-outline-none focus:tw-outline-none tw-mr-1 tw-mb-1 tw-ease-linear tw-transition-all tw-duration-150" type="button">
+              Voir tout
+            </button>
+          </div>
+          <div class="tw-flex-auto tw-w-full">
+            <div class="tw-relative tw-flex tw-flex-col tw-min-w-0 tw-break-words tw-bg-white tw-w-full tw-mb-2">
+              <div class="tw-block tw-w-full tw-overflow-x-auto">
                 <table class="tw-items-center tw-w-full tw-bg-transparent tw-border-collapse">
                   <thead class="thead-light">
                   <tr>
-                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left">
-                      Referral
+                    <th class="tw-px-6 tw-align-middle tw-pt-4 tw-pb-0 tw-text-xs tw-leading-tight tw-whitespace-nowrap tw-font-semibold tw-text-left">
+                      Spécialités:
                     </th>
-                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left">
-                      Visitors
+                    <th class="tw-px-6 tw-align-middle tw-pt-4 tw-pb-0 tw-text-xs tw-leading-tight tw-whitespace-nowrap tw-font-semibold tw-text-left">
+                      Membres:
                     </th>
-                    <th class="tw-px-6 bg-blueGray-50 text-blueGray-500 tw-align-middle tw-border tw-border-solid tw-border-blueGray-100 tw-py-3 tw-text-xs tw-uppercase tw-border-l-0 tw-border-r-0 tw-whitespace-nowrap tw-font-semibold tw-text-left min-w-140-px"></th>
+                    <th class="tw-px-6 tw-align-middle tw-pt-4 tw-pb-0 tw-text-xs tw-leading-tight tw-whitespace-nowrap tw-font-semibold tw-text-left tw-min-w-[200px]">
+                      Pourcentage
+                    </th>
                   </tr>
                   </thead>
                   <tbody>
-                  <tr>
-                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
-                      Facebook
+                  <tr v-for="(fonction, index) in fonctions" v-if="index < 6" :key="index">
+                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-b tw-border-r-0 tw-text-xs tw-whitespace-nowra tw-p-4 tw-text-left">
+                      {{ fonction?.nom }}
                     </th>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      1,480
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-b tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                      45
                     </td>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
+                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-b tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
                       <div class="tw-flex tw-items-center">
                         <span class="tw-mr-2">60%</span>
                         <div class="tw-relative tw-w-full">
                           <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-red-200">
                             <div style="width: 60%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center tw-bg-red-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
-                      Facebook
-                    </th>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      5,480
-                    </td>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      <div class="tw-flex tw-items-center">
-                        <span class="tw-mr-2">70%</span>
-                        <div class="tw-relative tw-w-full">
-                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded bg-emerald-200">
-                            <div style="width: 70%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-emerald-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
-                      Google
-                    </th>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      4,807
-                    </td>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      <div class="tw-flex tw-items-center">
-                        <span class="tw-mr-2">80%</span>
-                        <div class="tw-relative tw-w-full">
-                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-purple-200">
-                            <div style="width: 80%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center tw-bg-purple-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
-                      Instagram
-                    </th>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      3,678
-                    </td>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      <div class="tw-flex tw-items-center">
-                        <span class="tw-mr-2">75%</span>
-                        <div class="tw-relative tw-w-full">
-                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded bg-lightBlue-200">
-                            <div style="width: 75%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-lightBlue-500"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4 tw-text-left">
-                      twitter
-                    </th>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      2,645
-                    </td>
-                    <td class="tw-border-t-0 tw-px-6 tw-align-middle tw-border-l-0 tw-border-r-0 tw-text-xs tw-whitespace-nowrap tw-p-4">
-                      <div class="tw-flex tw-items-center">
-                        <span class="tw-mr-2">30%</span>
-                        <div class="tw-relative tw-w-full">
-                          <div class="tw-overflow-hidden tw-h-2 tw-text-xs tw-flex tw-rounded tw-bg-orange-200">
-                            <div style="width: 30%" class="tw-shadow-none tw-flex tw-flex-col tw-text-center tw-whitespace-nowrap tw-text-white tw-justify-center bg-emerald-500"></div>
                           </div>
                         </div>
                       </div>
@@ -361,7 +284,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

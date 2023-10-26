@@ -7,6 +7,7 @@
       <div :class="showSidebar ? 'tw-fixed':'tw-hidden lg:tw-fixed'" class="tw-inset-y-0 tw-flex-wrap tw-items-center tw-justify-between lg:tw-block tw-w-full tw-p-0 lg:tw-my-4 tw-overflow-y-auto tw-antialiased tw-transition-transform tw-duration-200 tw-bg-white tw-border-0 tw-shadow-xl dark:tw-shadow-none dark:tw-bg-gray-800 tw-max-w-[230px] ease-nav-brand lg:tw-ml-6 tw-rounded-r-2xl lg:tw-rounded-2xl xl:tw-left-0 xl:tw-translate-x-0" style="z-index: 999" aria-expanded="false">
         <div class="tw-h-20">
           <div class="tw-block tw-px-8 tw-py-6 tw-m-0 tw-text-sm tw-whitespace-nowrap tw-flex tw-items-center dark:tw-text-white tw-text-gray-700">
+<!--            <img class="tw-h-20 tw-w-32 tw-bg-transparent" src="@/assets/img/logos/tdev-tag.png" alt="Tdev logo">-->
             <img src="@/assets/img/logos/tdev.png" class="tw-inline tw-h-full tw-max-w-full tw-transition-all tw-duration-200 dark:tw-hidden ease-nav-brand tw-max-h-14 tw-w-full" alt="main_logo" />
           </div>
         </div>
@@ -124,7 +125,7 @@ export default {
         },
         {
           name: "Evénements",
-          fullname: "Evénements",
+          fullname: "Offres d'emploi",
           path: "/admin/events",
           mdi_icon: "mdi-calendar-star"
         },
@@ -132,7 +133,7 @@ export default {
           name: "Profile",
           fullname: "Profile",
           path: "/admin/profil",
-          mdi_icon: "mdi-calendar-star"
+          mdi_icon: "mdi-calendar"
         },
       ],
     }

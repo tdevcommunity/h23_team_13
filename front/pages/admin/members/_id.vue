@@ -89,13 +89,13 @@
               Curriculum Vitae
             </h3>
             <div class="tw-flex tw-space-x-3">
-              <button class="tw-bg-orange-500 tw-text-white tw-text-sm tw-rounded tw-px-6 tw-py-2">Télecherger le CV</button>
+              <a href="/assets/pdfs/Igor_BALLO_Fullstack_Developper.pdf" target="_blank" class="tw-bg-orange-500 tw-text-white tw-text-sm tw-rounded tw-px-6 tw-py-2">Télecherger le CV</a>
             </div>
           </div>
         </div>
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-flow-root">
-            <h3 class="tw-text-xl tw-font-bold">Skills</h3>
+            <h3 class="tw-text-xl tw-font-bold">Compétences</h3>
             <ul class="tw-flex tw-flex-wrap tw-mt-4 tw-pl-0">
               <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Brand Design
@@ -167,7 +167,7 @@
           <h3 class="tw-mb-4 tw-text-xl tw-font-bold">General information</h3>
           <dl class="tw-grid tw-grid-cols-1 tw-gap-x-4 tw-gap-y-8 sm:tw-grid-cols-2">
             <div class="sm:tw-col-span-2">
-              <dt class="tw-text-lg tw-font-medium tw-text-gray-900">About me</dt>
+              <dt class="tw-text-lg tw-font-medium tw-text-gray-900">Description</dt>
               <dd class="tw-mt-1 tw-space-y-3 tw-max-w-prose tw-text-sm tw-text-gray-500">
                 <p>
                   Dedicated, passionate, and accomplished Full Stack
@@ -186,7 +186,7 @@
               </dd>
             </div>
             <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Education</dt>
+              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Formation</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
                 Thomas Jeff High School, Stanford University
               </dd>
@@ -200,29 +200,29 @@
               </dd>
             </div>
             <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Join Date</dt>
+              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Enrégistré le</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
                 12-09-2021
               </dd>
             </div>
             <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Languages</dt>
+              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Langues</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
                 English, German, Italian, Spanish
               </dd>
             </div>
             <div>
               <dt class="tw-text-sm tw-font-medium tw-text-gray-500">
-                Organization
+                Entreprise
               </dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
                 Bergside Inc.
               </dd>
             </div>
             <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Role</dt>
+              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Fonction</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                Graphic Designer
+                Developpeur Full-Stack
               </dd>
             </div>
             <div>
@@ -234,7 +234,7 @@
               </dd>
             </div>
             <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Birthday</dt>
+              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Date de naissance</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
                 15-08-1990
               </dd>
