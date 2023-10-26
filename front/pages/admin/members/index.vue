@@ -72,160 +72,36 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr v-if="members.length === 0">
+                  <span class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
+                    <h2 class="tw-text-sm tw-px-6 tw-text-center">Aucun utilisateur enrégistrer pour le moment</h2>
+                  </span>
+                </tr>
+
+                <tr v-else v-for="(member, index) in members" :key="index">
                   <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <div class="tw-flex tw-px-2 tw-py-1">
                       <div>
                         <img src="@/assets/img/team-2.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user1" />
                       </div>
                       <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">John Michael</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">john@creative-tim.com</p>
+                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">{{ member.lastname }} {{ member.firstname }}</h6>
+                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">{{ member.email }}</p>
                       </div>
                     </div>
                   </td>
                   <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Manager</p>
+                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">{{ member.fonction }}</p>
                     <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Organization</p>
                   </td>
                   <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
                     <span class="tw-bg-gradient-to-tl tw-from-emerald-500 tw-to-teal-400 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Online</span>
                   </td>
                   <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">23/04/18</span>
+                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400 tw-capitalize">{{ formatDateWithoutHour(member.created_at) }}</span>
                   </td>
                   <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <div class="tw-flex tw-px-2 tw-py-1">
-                      <div>
-                        <img src="@/assets/img/team-3.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user2" />
-                      </div>
-                      <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">Alexa Liras</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">alexa@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Programator</p>
-                    <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Developer</p>
-                  </td>
-                  <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-bg-gradient-to-tl tw-from-slate-600 tw-to-slate-300 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Offline</span>
-                  </td>
-                  <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">11/01/19</span>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <div class="tw-flex tw-px-2 tw-py-1">
-                      <div>
-                        <img src="@/assets/img/team-4.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user3" />
-                      </div>
-                      <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">Laurent Perrier</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">laurent@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Executive</p>
-                    <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Projects</p>
-                  </td>
-                  <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-bg-gradient-to-tl tw-from-emerald-500 tw-to-teal-400 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Online</span>
-                  </td>
-                  <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">19/09/17</span>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <div class="tw-flex tw-px-2 tw-py-1">
-                      <div>
-                        <img src="@/assets/img/team-3.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user4" />
-                      </div>
-                      <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">Michael Levi</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">michael@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Programator</p>
-                    <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Developer</p>
-                  </td>
-                  <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-bg-gradient-to-tl tw-from-emerald-500 tw-to-teal-400 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Online</span>
-                  </td>
-                  <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">24/12/08</span>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <div class="tw-flex tw-px-2 tw-py-1">
-                      <div>
-                        <img src="@/assets/img/team-2.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user5" />
-                      </div>
-                      <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">Richard Gran</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">richard@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Manager</p>
-                    <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Executive</p>
-                  </td>
-                  <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-bg-gradient-to-tl tw-from-slate-600 tw-to-slate-300 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Offline</span>
-                  </td>
-                  <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b dark:border-white/40 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">04/10/21</span>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <div class="tw-flex tw-px-2 tw-py-1">
-                      <div>
-                        <img src="@/assets/img/team-4.jpg" class="tw-inline-flex tw-items-center tw-justify-center tw-mr-4 tw-text-sm tw-text-white tw-transition-all tw-duration-200 tw-ease-in-out tw-h-9 tw-w-9 tw-rounded-xl" alt="user6" />
-                      </div>
-                      <div class="tw-flex tw-flex-col tw-justify-center">
-                        <h6 class="tw-mb-0 tw-text-sm tw-leading-normal dark:tw-text-white">Miriam Eric</h6>
-                        <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">miriam@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <p class="tw-mb-0 tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80">Programtor</p>
-                    <p class="tw-mb-0 tw-text-xs tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">Developer</p>
-                  </td>
-                  <td class="tw-p-2 tw-text-sm tw-leading-normal tw-text-center tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-bg-gradient-to-tl tw-from-slate-600 tw-to-slate-300 tw-px-2.5 tw-text-xs tw-rounded-lg tw-py-1.5 tw-inline-block tw-whitespace-nowrap tw-text-center tw-align-baseline tw-font-bold tw-uppercase tw-leading-none tw-text-white">Offline</span>
-                  </td>
-                  <td class="tw-p-2 tw-text-center tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <span class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 text-slate-400">14/09/20</span>
-                  </td>
-                  <td class="tw-p-2 tw-align-middle tw-bg-transparent tw-border-b-0 tw-whitespace-nowrap shadow-transparent">
-                    <NuxtLink :to="`/admin/members/${1}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
+                    <NuxtLink :to="`/admin/members/${member.id}`" class="tw-text-xs tw-font-semibold tw-leading-tight dark:tw-text-white dark:tw-opacity-80 tw-text-white tw-rounded-lg tw-bg-gray-500 tw-px-4 tw-py-2"> Voir plus</NuxtLink>
                   </td>
                 </tr>
                 </tbody>
@@ -245,30 +121,35 @@ export default {
     return {
       techno: [],
       search: [],
-      technologies: [
-        { name: "Python", type: "Langage de programmation" },
-        { name: "JavaScript", type: "Langage de programmation" },
-        { name: "Java", type: "Langage de programmation" },
-        { name: "C#", type: "Langage de programmation" },
-        { name: "C++", type: "Langage de programmation" },
-        { name: "Ruby", type: "Langage de programmation" },
-        { name: "PHP", type: "Langage de programmation" },
-        { name: "Swift", type: "Langage de programmation" },
-        { name: "Go", type: "Langage de programmation" },
-        { name: "React", type: "Framework (web)" },
-        { name: "Angular", type: "Framework (web)" },
-        { name: "Vue.js", type: "Framework (web)" },
-        { name: "Ruby on Rails", type: "Framework (web)" },
-        { name: "Django", type: "Framework (web)" },
-        { name: "Express.js", type: "Framework (web)" },
-        { name: "Spring Boot", type: "Framework (web)" },
-        { name: "Laravel", type: "Framework (web)" },
-      ],
+      members: [],
+
     };
   },
   methods: {
+    async getMembers(){
+      await axios.get("/admin/members")
+          .then(res => {
+            if(!res.data.error){
+              this.members = res.data.members
+              this.members.sort((a, b) => {
+                // Convertissez les dates en objets Date pour les comparer
+                const dateA = new Date(a.created_at);
+                const dateB = new Date(b.created_at);
 
+                // Triez par ordre décroissant en soustrayant les dates
+                return dateB - dateA;
+              });
+            }
+          })
+          .catch(error => {
+            console.log(error)
+          })
+    },
   },
+
+  mounted(){
+    this.getMembers()
+  }
 
 };
 </script>

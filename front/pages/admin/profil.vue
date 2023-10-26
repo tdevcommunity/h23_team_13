@@ -1,16 +1,19 @@
 <template>
   <div>
-    <div class="tw-grid tw-grid-cols-1 xl:tw-grid-cols-3 xl:tw-gap-6">
+    <div v-if="!user_info" class="tw-bg-white tw-text-sm tw-p-6 tw-w-full tw-text-center tw-rounded-2xl">
+      Chargement
+    </div>
+    <div v-else class="tw-grid tw-grid-cols-1 xl:tw-grid-cols-3 xl:tw-gap-6">
       <div class="tw-col-span-full xl:tw-col-auto">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-items-center sm:tw-flex xl:tw-block 2xl:tw-flex sm:tw-space-x-4 xl:tw-space-x-0 2xl:tw-space-x-4">
             <img class="tw-mb-4 tw-w-28 tw-h-28 tw-rounded-lg sm:tw-mb-0 xl:tw-mb-4 2xl:tw-mb-0 tw-shadow-lg shadow-gray-300" src="@/assets/img/igor.jpg" alt="Photo de profile" />
             <div>
               <h3 class="tw-mb-1 tw-text-2xl tw-font-bold tw-text-gray-900">
-                Alec Thompson
+                {{ user_info?.lastname }} {{ user_info?.firstname }}
               </h3>
               <div class="tw-mb-4 tw-text-sm tw-font-normal tw-text-gray-500">
-                CEO / Co-Founder
+                {{ user_info?.fonction }}
               </div>
               <a href="#" class="tw-inline-flex tw-items-center tw-py-2 tw-px-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">
                 <svg class="tw-mr-2 tw--ml-1 tw-w-4 tw-h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -24,8 +27,8 @@
         </div>
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-flow-root">
-            <h3 class="tw-text-xl tw-font-bold">Social accounts</h3>
-            <ul class="tw-divide-y tw-divide-gray-200">
+            <h3 class="tw-text-xl tw-font-bold">Réseaux sociaux</h3>
+            <ul class="tw-divide-y tw-pl-0 tw-divide-gray-200">
               <li class="tw-py-4">
                 <div class="tw-flex tw-items-center tw-space-x-4">
                   <div class="tw-flex-shrink-0">
@@ -35,14 +38,14 @@
                   </div>
                   <div class="tw-flex-1 tw-min-w-0">
 <span class="tw-block tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-Facebook account
+Compte facebook
 </span>
-                    <a href="#" class="tw-block tw-text-sm tw-font-normal text-fuchsia-500 tw-truncate hover:tw-underline">
-                      www.facebook.com/themesberg
+                    <a href="" class="tw-block tw-text-sm tw-font-normal text-fuchsia-500 tw-truncate hover:tw-underline">
+                      www.facebook.com/igorba_lo@#
                     </a>
                   </div>
                   <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 hover:scale-[1.02] tw-transition-transform">Disconnect</a
+                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Aperçu</a
                     >
                   </div>
                 </div>
@@ -56,14 +59,14 @@ Facebook account
                   </div>
                   <div class="tw-flex-1 tw-min-w-0">
 <span class="tw-block tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-Twitter account
+Compte twitter
 </span>
                     <a href="#" class="tw-block tw-text-sm tw-font-normal text-fuchsia-500 tw-truncate hover:tw-underline">
-                      www.twitter.com/themesberg
+                      www.twitter.com/igorba_lo@#
                     </a>
                   </div>
                   <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 hover:scale-[1.02] tw-transition-transform">Disconnect</a
+                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Aperçu</a
                     >
                   </div>
                 </div>
@@ -77,103 +80,63 @@ Twitter account
                   </div>
                   <div class="tw-flex-1 tw-min-w-0">
 <span class="tw-block tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-Github account
+Compte github
 </span>
                     <span class="tw-block tw-text-sm tw-font-normal tw-text-gray-500 tw-truncate">
-Not connected
+Non renseigné
 </span>
                   </div>
-                  <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
-                    >
-                  </div>
+
                 </div>
               </li>
               <li class="tw-pt-4 tw-pb-6">
                 <div class="tw-flex tw-items-center tw-space-x-4">
                   <div class="tw-flex-shrink-0">
-                    <svg class="tw-w-5 tw-h-5" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="dribbble" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path fill="currentColor" d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
-                    </svg>
+                    <svg class="tw-w-5 tw-h-5 tw-text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>linkedin</title><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>
                   </div>
                   <div class="tw-flex-1 tw-min-w-0">
 <span class="tw-block tw-text-base tw-font-semibold tw-text-gray-900 tw-truncate">
-Dribbble account
+Compte linkedin
 </span>
                     <span class="tw-block tw-text-sm tw-font-normal tw-text-gray-500 tw-truncate">
-Not connected
+Non renseigné
 </span>
                   </div>
-                  <div class="tw-inline-flex tw-items-center">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-mr-3 tw-mb-3 tw-text-sm tw-font-medium tw-text-center tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform">Connect</a
-                    >
-                  </div>
+
                 </div>
               </li>
             </ul>
-            <div>
-              <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-                Sauvegarder
-              </button>
-            </div>
           </div>
         </div>
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-flow-root">
-            <h3 class="tw-text-xl tw-font-bold">Other accounts</h3>
-            <ul class="tw-mb-6 tw-divide-y tw-divide-gray-200">
-              <li class="tw-py-4">
+            <h3 class="tw-text-xl tw-font-bold">Messages directes</h3>
+            <ul class="tw-pl-0 tw-divide-y tw-divide-gray-200">
+
+              <li class="tw-pt-4">
                 <div class="tw-flex tw-justify-between xl:tw-block 2xl:tw-flex align-center 2xl:tw-space-x-4">
                   <div class="tw-flex tw-space-x-4 xl:tw-mb-4 2xl:tw-mb-0">
                     <div>
-                      <img class="tw-w-6 tw-h-6 tw-rounded-full" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/bonnie-green.png" alt="Bonnie image" />
+                      <img class="tw-w-8 tw-h-8 tw-rounded-full" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos.png" alt="Jese image" />
                     </div>
                     <div class="tw-flex-1 tw-min-w-0">
                       <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-leading-none tw-truncate tw-mb-0.5">
-                        Bonnie Green
+                        Daniel AMEGNINOU
                       </p>
                       <p class="tw-mb-1 tw-text-sm tw-font-normal text-fuchsia-600 tw-truncate">
-                        New York, USA
+                        Modérateur à Tdev
                       </p>
                       <p class="tw-text-xs tw-font-medium tw-text-gray-500">
-                        Last seen: 1 min ago
+                        Depuis: 2 min
                       </p>
                     </div>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center tw-w-auto xl:tw-w-full 2xl:tw-w-auto">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-w-full tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Disconnect</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li class="tw-py-4">
-                <div class="tw-flex tw-justify-between xl:tw-block 2xl:tw-flex align-center 2xl:tw-space-x-4">
-                  <div class="tw-flex tw-space-x-4 xl:tw-mb-4 2xl:tw-mb-0">
-                    <div>
-                      <img class="tw-w-6 tw-h-6 tw-rounded-full" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos.png" alt="Jese image" />
-                    </div>
-                    <div class="tw-flex-1 tw-min-w-0">
-                      <p class="tw-text-base tw-font-semibold tw-text-gray-900 tw-leading-none tw-truncate tw-mb-0.5">
-                        Jese Leos
-                      </p>
-                      <p class="tw-mb-1 tw-text-sm tw-font-normal text-fuchsia-600 tw-truncate">
-                        California, USA
-                      </p>
-                      <p class="tw-text-xs tw-font-medium tw-text-gray-500">
-                        Last seen: 2 min ago
-                      </p>
-                    </div>
-                  </div>
-                  <div class="tw-inline-flex tw-items-center tw-w-auto xl:tw-w-full 2xl:tw-w-auto">
-                    <a href="#" class="tw-py-2 tw-px-3 tw-w-full tw-text-sm tw-font-medium tw-text-center tw-text-gray-900 tw-bg-white tw-rounded-lg tw-border tw-border-gray-300 hover:tw-bg-gray-100 focus:tw-ring-4 focus:ring-fuchsia-200">Disconnect</a
-                    >
                   </div>
                 </div>
               </li>
             </ul>
             <div>
               <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center">
-                Sauvegarder
+                Ouvrir le chat
               </button>
             </div>
           </div>
@@ -181,116 +144,134 @@ Not connected
       </div>
       <div class="tw-col-span-2">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
-          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">General information</h3>
+          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">Information générale</h3>
           <form action="#">
             <div class="tw-grid tw-grid-cols-6 tw-gap-6">
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">First Name</label
+                <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
                 >
-                <input type="text" name="first-name" id="first-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
+                <input v-model="user_info.lastname" type="text" name="first-name" id="first-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Last Name</label
+                <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Prénoms*</label
                 >
-                <input type="text" name="last-name" id="last-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
+                <input v-model="user_info.firstname" type="text" name="last-name" id="last-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Country</label
+                <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays*</label
                 >
-                <input type="text" name="country" id="country" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
+                <input v-model="user_info.country" type="text" name="country" id="country" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="city" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">City</label
+                <label for="city" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adresse</label
                 >
-                <input type="text" name="city" id="city" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
+                <input v-model="user_info.adresse" type="text" name="city" id="city" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
+              </div>
+
+              <div class="tw-col-span-6 sm:tw-col-span-3">
+                <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email*</label
+                >
+                <input v-model="user_info.email" type="email" name="email" id="email" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adress</label
+                <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Numéro de téléphone*</label
                 >
-                <input type="text" name="adress" id="adress" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. California" required />
+                <input v-model="user_info.telephone" type="number" name="phone-number" id="phone-number" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email</label
+                <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance*</label
                 >
-                <input type="email" name="email" id="email" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
+                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
               </div>
+
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Phone Number</label
+                <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Genre*</label
                 >
-                <input type="number" name="phone-number" id="phone-number" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
+                <select v-model="user_info.sex" type="date" name="sex" id="sex" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" required >
+                  <option value="Féminin">Féminin</option>
+                  <option value="Masculin">Masculin</option>
+                  <option value="Autre">Autre</option>
+                </select>
+<!--                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />-->
               </div>
+
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Birthday</label
+                <label class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Fonction*</label
                 >
-                <input type="number" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
+                <v-autocomplete
+                    class="v-text-field"
+                    :items="fonctions"
+                    v-model="user_info.fonction"
+                    outlined dense
+                    item-value="nom"
+                    item-text="nom"
+                    clearable
+                    label="Votre profession"
+                    placeholder="Tapez votre profession"
+                >
+                </v-autocomplete>
               </div>
+
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="organization" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Organization</label
+                <label for="confirm-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Compétences techniques</label
                 >
-                <input type="text" name="organization" id="organization" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Company Name" required />
+                <v-autocomplete
+                    :items="technologies"
+                    item-text="name"
+                    autocomplete
+                    label="Filtrer par technologies"
+                    placeholder="Filtrer par technologies"
+                    multiple
+                    clearable
+                    outlined dense
+                    persistent-hint
+                ></v-autocomplete>
               </div>
-              <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="role" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Role</label
-                >
-                <input type="text" name="role" id="role" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="React Developer" required />
-              </div>
-              <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="department" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Department</label
-                >
-                <input type="text" name="department" id="department" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Development" required />
-              </div>
-              <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="zip-code" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Zip/postal code</label
-                >
-                <input type="number" name="zip-code" id="zip-code" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="123456" required />
-              </div>
+
               <div class="tw-col-span-6 sm:col-full">
-                <button class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
+                <v-btn @click="updateUser()" class="tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md shadow-gray-300 hover:scale-[1.02] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
                   Sauvegarder
-                </button>
+                </v-btn>
               </div>
             </div>
           </form>
         </div>
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
-          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">Password information</h3>
+          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">Définir un nouveau mot de passe</h3>
           <form action="#">
             <div class="tw-grid tw-grid-cols-6 tw-gap-6">
+<!--              <div class="tw-col-span-6 sm:tw-col-span-3">-->
+<!--                <label for="current-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Current password</label-->
+<!--                >-->
+<!--                <input type="text" name="current-password" id="current-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />-->
+<!--              </div>-->
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="current-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Current password</label
-                >
-                <input type="text" name="current-password" id="current-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
-              </div>
-              <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="new-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">New password</label
+                <label for="new-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nouveau mot de passe</label
                 >
                 <input type="text" name="new-password" id="new-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
-                <label for="confirm-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Confirm password</label
+                <label for="confirm-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Confirmer le nouveau mot de passe</label
                 >
                 <input type="text" name="confirm-password" id="confirm-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
+
               <div class="tw-col-span-full">
                 <div class="tw-text-sm tw-font-medium">
-                  Password requirements:
+                  Exigences en matière de mot de passe :
                 </div>
                 <div class="tw-mb-1 tw-text-sm tw-font-normal tw-text-gray-500">
-                  Ensure that these requirements are met:
+                  Veillez à ce que les conditions suivantes soient remplies :
                 </div>
                 <ul class="tw-pl-4 tw-space-y-1 tw-text-gray-500">
                   <li class="tw-text-xs tw-font-normal">
-                    At least 10 characters (and up to 100 characters)
+                    Au moins 6 caractères (et jusqu'à 25 caractères)
                   </li>
                   <li class="tw-text-xs tw-font-normal">
-                    At least one tw-lowercase character
+                    Au moins un caractère à deux minuscules
                   </li>
                   <li class="tw-text-xs tw-font-normal">
-                    Inclusion of at least one special character, e.g., ! @
-                    # ?
-                  </li>
-                  <li class="tw-text-xs tw-font-normal">
-                    Some text here zoltan
+                    Inclusion d'au moins un caractère spécial, par exemple, ! @ # ?
                   </li>
                 </ul>
               </div>
@@ -304,10 +285,10 @@ Not connected
         </div>
       </div>
     </div>
-    <div class="tw-grid tw-grid-cols-1 lg:tw-gap-6">
+    <div class="tw-hidden w-grid tw-grid-cols-1 lg:tw-gap-6">
       <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-4 xl:tw-mb-0">
         <div class="tw-flow-root">
-          <h3 class="tw-text-xl tw-font-bold">Alerts & Notifications</h3>
+          <h3 class="tw-text-xl tw-font-bold">Alertes & Notifications</h3>
           <p class="tw-text-sm tw-font-normal tw-text-gray-500">
             You can set up Themesberg to get notifications
           </p>
@@ -393,8 +374,49 @@ export default {
   layout: "master",
   data(){
     return {
-
+      user_info: null
     }
+  },
+  mounted(){
+    this.getMemberInfo()
+  },
+  methods: {
+    async getMemberInfo(){
+      // await axios.get("/admin/members/" + this.user?.id)
+      await axios.get("/admin/members/" + this.userInfo.id)
+          .then(res => {
+            if(!res.data.error){
+              this.user_info = res.data.user
+            }
+          })
+          .catch(error => {
+            console.log(error)
+          })
+    },
+
+    async updateUser(){
+      // if (this.$refs.form.validate()) {
+        this.btnLoading = true;
+        this.delegue.delegue_id = this.ligne.id
+        await axios.post('/ligne/update', this.ligne)
+            .then((res) => {
+              this.btnLoading = false;
+              this.showDelegueForm = false;
+              this.ligne = {
+                nom: "",
+                intitule: "",
+                distance: "",
+                kilometre: "",
+                arret: "",
+              };
+              this.getLigneBus()
+            })
+            .catch((error) => {
+              this.btnLoading = false;
+              console.log(error);
+            })
+      // }
+    },
   }
 }
 </script>

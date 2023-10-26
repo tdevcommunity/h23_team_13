@@ -1,26 +1,28 @@
 <template>
   <div>
-    <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 md:tw-gap-6">
+    <div v-if="!user_info" class="tw-bg-white tw-text-sm tw-p-6 tw-w-full tw-text-center tw-rounded-2xl">
+      Chargement
+    </div>
+    <div v-else class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 md:tw-gap-6">
       <div class="tw-col-span-full md:tw-col-auto">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="sm:tw-flex xl:tw-block sm:tw-space-x-4 xl:tw-space-x-0">
-<!--            <img class="tw-mb-2 tw-w-20 tw-h-20 tw-rounded-2xl tw-shadow-lg shadow-gray-300" src="https://demos.creative-tim.com/soft-ui-flowbite-pro/images/users/jese-leos-2x.png" alt="Jese portrait" />-->
             <img class="tw-mb-2 tw-w-20 tw-h-20 tw-rounded-2xl tw-shadow-lg shadow-gray-300" src="@/assets/img/igor.jpg" alt="Jese portrait" />
             <div>
-              <h2 class="tw-text-xl tw-font-bold">Alec Thompson</h2>
+              <h2 class="tw-text-xl tw-font-bold">{{ user_info.lastname }} {{ user_info.firstname }}</h2>
               <ul class="tw-mt-2 tw-space-y-1 tw-pl-0">
                 <li class="tw-flex tw-items-center tw-text-sm tw-font-normal tw-text-gray-500">
                   <svg class="tw-mr-2 tw-w-4 tw-h-4 tw-text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                     <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
                   </svg>
-                  CEO / Co-Founder
+                  {{ user_info.fonction }}
                 </li>
                 <li class="tw-flex tw-items-center tw-text-sm tw-font-normal tw-text-gray-500">
                   <svg class="tw-mr-2 tw-w-4 tw-h-4 tw-text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                   </svg>
-                  San Francisco, USA
+                  {{ user_info.adresse }}, {{ user_info.country }}
                 </li>
               </ul>
             </div>
@@ -28,17 +30,13 @@
           <div class="tw-mb-4 sm:tw-flex xl:tw-block">
             <div class="sm:tw-flex-1">
               <address class="tw-text-sm tw-not-italic tw-font-normal tw-text-gray-500">
-                <div class="tw-mt-4">Email adress</div>
-                <a class="tw-text-sm tw-font-medium tw-text-gray-900" href="/cdn-cgi/l/email-protection#cfb8aaada2aebcbbaabd8fa9a3a0b8ada6bbaae1aca0a2"><span class="__cf_email__" data-cfemail="631a0c16110d020e0623050f0c14010a17064d000c0e">[email&#160;protected]</span></a
+                <div class="tw-mt-4">Adresse email</div>
+                <a class="tw-text-sm tw-font-medium tw-text-gray-900" href="#"><span class="__cf_email__" data-cfemail="631a0c16110d020e0623050f0c14010a17064d000c0e">{{ user_info.email }}</span></a
                 >
-                <div class="tw-mt-4">Home adress</div>
+
+                <div class="tw-mt-4">Numéro de téléphone</div>
                 <div class="tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">
-                  92 Miles Drive, Newark, NJ 07103, California,
-                  <br/>United States of America
-                </div>
-                <div class="tw-mt-4">Phone number</div>
-                <div class="tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">
-                  +00 123 456 789 / +12 345 678
+                  +{{ user_info.telephone }}
                 </div>
               </address>
             </div>
@@ -93,6 +91,7 @@
             </div>
           </div>
         </div>
+
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
           <div class="tw-flow-root">
             <h3 class="tw-text-xl tw-font-bold">Compétences</h3>
@@ -164,7 +163,7 @@
       </div>
       <div class="tw-col-span-2">
         <div class="tw-bg-white tw-shadow-lg shadow-gray-200 tw-rounded-2xl tw-p-4 tw-mb-6">
-          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">General information</h3>
+          <h3 class="tw-mb-4 tw-text-xl tw-font-bold">Information générale</h3>
           <dl class="tw-grid tw-grid-cols-1 tw-gap-x-4 tw-gap-y-8 sm:tw-grid-cols-2">
             <div class="sm:tw-col-span-2">
               <dt class="tw-text-lg tw-font-medium tw-text-gray-900">Description</dt>
@@ -193,16 +192,16 @@
             </div>
             <div>
               <dt class="tw-text-sm tw-font-medium tw-text-gray-500">
-                Work History
+                A travailler chez
               </dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                Twitch, Google, Apple
+                TDev, Google, Apple
               </dd>
             </div>
             <div>
               <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Enrégistré le</dt>
-              <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                12-09-2021
+              <dd class="tw-text-sm tw-font-semibold tw-capitalize tw-text-gray-900">
+                {{ formatDate(user_info.created_at) }}
               </dd>
             </div>
             <div>
@@ -211,32 +210,18 @@
                 English, German, Italian, Spanish
               </dd>
             </div>
-            <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">
-                Entreprise
-              </dt>
-              <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                Bergside Inc.
-              </dd>
-            </div>
+
             <div>
               <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Fonction</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                Developpeur Full-Stack
+                {{ user_info.fonction }}
               </dd>
             </div>
-            <div>
-              <dt class="tw-text-sm tw-font-medium tw-text-gray-500">
-                Department
-              </dt>
-              <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                Marketing
-              </dd>
-            </div>
+
             <div>
               <dt class="tw-text-sm tw-font-medium tw-text-gray-500">Date de naissance</dt>
               <dd class="tw-text-sm tw-font-semibold tw-text-gray-900">
-                15-08-1990
+                {{ user_info.birthday}}
               </dd>
             </div>
           </dl>
@@ -323,9 +308,25 @@ export default {
   layout: "master",
   data(){
     return {
-
+      user_info: null,
     }
-  }
+  },
+  methods: {
+    async getMemberInfo(){
+      await axios.get("/admin/members/" + this.$route.params.id)
+          .then(res => {
+            if(!res.data.error){
+              this.user_info = res.data.user
+            }
+          })
+          .catch(error => {
+            console.log(error)
+          })
+    },
+  },
+  mounted(){
+    this.getMemberInfo()
+  },
 }
 </script>
 

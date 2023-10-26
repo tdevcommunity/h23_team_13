@@ -1,12 +1,6 @@
 <template>
   <v-app>
     <div class="tw-m-0 tw-font-sans tw-antialiased tw-font-normal tw-bg-white tw-text-start tw-text-base leading-default tw-text-slate-500">
-
-      <!--  <nav class="tw-absolute tw-top-0 tw-z-30 tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-w-full tw-px-4 tw-py-2 tw-mt-6 tw-mb-4 tw-shadow-none lg:tw-flex-nowrap lg:tw-justify-start">-->
-      <!--    <div class="container tw-flex tw-items-center tw-justify-between tw-py-0 tw-flex-wrap-inherit">-->
-      <!--      <a class="tw-py-2 tw-ml-4 tw-mr-4 tw-font-bold tw-text-white tw-text-sm tw-whitespace-nowrap lg:tw-ml-0" href="https://demos.creative-tim.com/argon-dashboard-tailwind/pages/dashboard.html" target="_blank"> Argon Dashboard 2 </a>-->
-      <!--    </div>-->
-      <!--  </nav>-->
       <main class="tw-mt-0 tw-transition-all tw-duration-200 tw-ease-in-out">
         <section class="tw-min-h-screen">
           <div class="bg-image tw-bg-top tw-relative tw-flex tw-items-start tw-pt-12 tw-pb- tw-m-4 tw-overflow-hidden tw-bg-cover tw-h-96 tw-rounded-xl">
@@ -35,49 +29,60 @@
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
                             >
-                            <input type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
+                            <input v-model="form.lastname" type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Prénoms*</label
                             >
-                            <input type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
+                            <input v-model="form.firstname" type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email*</label
                             >
-                            <input type="email" name="email" id="email" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
+                            <input v-model="form.email" type="email" name="email" id="email" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Téléphone*</label
                             >
-                            <input type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
+                            <input v-model="form.telephone" type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays de résidence*</label
                             >
-                            <input type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="United States" required />
+                            <input v-model="form.country" type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="United States" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adresse</label
                             >
-                            <input type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
+                            <input v-model="form.adresse" type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
-                            <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance</label
+                            <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance*</label
                             >
-                            <input type="date" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
+                            <input v-model="form.birthday" type="date" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
+                            <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Genre*</label
+                            >
+                            <select v-model="form.sex" type="date" name="sex" id="sex" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required >
+                            <option value="Féminin">Féminin</option>
+                            <option value="Masculin">Masculin</option>
+                            <option value="Autre">Autre</option>
+                            </select>
+                          </div>
+
+                          <div class="tw-col-span-6 sm:tw-col-span-6">
                             <label class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Fonction*</label
                             >
                             <v-autocomplete
                                 class="v-text-field"
                                 :items="fonctions"
+                                v-model="form.fonction"
                                 outlined dense
-                                item-value="id"
+                                item-value="nom"
                                 item-text="nom"
                                 clearable
                                 label="Votre profession"
@@ -86,16 +91,10 @@
                             </v-autocomplete>
                           </div>
 
-<!--                          <div class="tw-col-span-6 sm:tw-col-span-3">-->
-<!--                            <label for="organization" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Organization</label-->
-<!--                            >-->
-<!--                            <input type="text" name="organization" id="organization" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Company Name" required />-->
-<!--                          </div>-->
-
                           <div class="tw-w-full tw-col-span-6 tw-mt-2">
-                            <button class="tw-w-full tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md tw-shadow-gray-300 hover:tw-scale-[1] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
+                            <v-btn @click.prevent="register()" :loading="btnLoading" class="tw-w-full tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md tw-shadow-gray-300 hover:tw-scale-[1] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
                               Soumettre
-                            </button>
+                            </v-btn>
 
                             <p class="tw-mt-4 tw-mb-0 tw-leading-normal tw-text-sm tw-text-gray-800">Vous avez déja un compte ? <NuxtLink to="/auth/login" class="tw-underline tw-font-bold tw-text-red-700">Se Connecter</NuxtLink></p>
 
@@ -111,6 +110,9 @@
         </section>
       </main>
     </div>
+    <v-snackbar v-model="snackbar" :color="snackbarColor" :timeout="2000">
+      {{ snackbar_text }}
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -121,9 +123,17 @@ export default {
     return {
       startLogin: false,
       loginError: false,
-      auth: {
+      btnLoading: false,
+      form: {
+        firstname: "",
+        lastname: "",
         email: "",
-        password: "",
+        telephone: "",
+        birthday: "",
+        fonction: "",
+        country: "",
+        adresse: "",
+        sex: "",
       },
       snackbarColor: "primary",
       snackbar_text: "",
@@ -134,41 +144,33 @@ export default {
     this.fonctions.sort((a, b) => a.nom.localeCompare(b.nom));
   },
   methods: {
-    async login() {
-      if (!this.auth.email || !this.auth.password) {
-        this.snackbar_text = "Veuillez renseigner tous les champs.";
-        this.snackbarColor = "accent";
+    async register(){
+      if (!this.form.email || !this.form.firstname || !this.form.lastname || !this.form.sex || !this.form.telephone || !this.form.birthday || !this.form.country || !this.form.fonction) {
+        this.snackbar_text = "Veuillez renseigner tous les champs réquis.";
+        this.snackbarColor = "error";
         this.snackbar = true;
         return;
       }
-      this.startLogin = true
-      let response = null;
-      this.loginError = false;
-      let error = true;
-      try {
-        response = await axios
-            .post("/admin/login", this.auth)
-            .then((resp) => resp.data)
+        this.btnLoading = true;
+        await axios.post('/auth/register', this.form)
+            .then((res) => {
+              this.btnLoading = false;
+              this.form = {
+                firstname: "",
+                lastname: "",
+                email: "",
+                telephone: "",
+                birthday: "",
+                fonction: "",
+                country: "",
+                adresse: "",
+              };
+            })
             .catch((error) => {
-              this.loginError = true;
-            });
-        error = false;
-      } catch (e) {
-        this.loginError = true;
+              this.btnLoading = false;
+              console.log(error);
+            })
       }
-
-      this.startLogin = false;
-      if (response.error) {
-        this.loginError = true;
-      } else if (response && !response.error) {
-        await this.$store.dispatch("auth/saveToken", {
-          token: response.token,
-          user: response.user,
-          last_connexion_time: new Date().getTime(),
-        });
-        this.$router.replace('/admin/dashboard');
-      }
-    },
   },
 }
 </script>

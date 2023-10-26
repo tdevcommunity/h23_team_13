@@ -1,9 +1,32 @@
 import config from "../config";
+import { mapGetters } from "vuex";
+import Cookies from 'js-cookie'
+
 
 export default {
     data() {
         return {
+            userInfo: null,
             loading: false,
+            technologies: [
+                { name: "Python", type: "Langage de programmation" },
+                { name: "JavaScript", type: "Langage de programmation" },
+                { name: "Java", type: "Langage de programmation" },
+                { name: "C#", type: "Langage de programmation" },
+                { name: "C++", type: "Langage de programmation" },
+                { name: "Ruby", type: "Langage de programmation" },
+                { name: "PHP", type: "Langage de programmation" },
+                { name: "Swift", type: "Langage de programmation" },
+                { name: "Go", type: "Langage de programmation" },
+                { name: "React", type: "Framework (web)" },
+                { name: "Angular", type: "Framework (web)" },
+                { name: "Vue.js", type: "Framework (web)" },
+                { name: "Ruby on Rails", type: "Framework (web)" },
+                { name: "Django", type: "Framework (web)" },
+                { name: "Express.js", type: "Framework (web)" },
+                { name: "Spring Boot", type: "Framework (web)" },
+                { name: "Laravel", type: "Framework (web)" },
+            ],
             fonctions: [
                 { id: 1, nom: "Développeur Web Front-End" },
                 { id: 2, nom: "Développeur Web Back-End" },
@@ -28,14 +51,27 @@ export default {
             ],
         }
     },
-    mounted() {
 
+    mounted(){
+        this.getUser()
     },
     methods: {
+        getUser(){
+            const userCookie = Cookies.get('user'); // Récupère la valeur du cookie 'user'
+
+            if (userCookie) {
+                try {
+                    this.userInfo = JSON.parse(userCookie); // Parse la valeur du cookie en tant qu'objet
+                    // Maintenant, vous avez l'objet utilisateur (user) que vous pouvez utiliser
+                    console.log('Utilisateur récupéré depuis le cookie :', userCookie);
+                    // Faites ce que vous devez faire avec l'objet utilisateur
+                } catch (error) {
+                    console.error('Erreur lors de la lecture et du parsing du cookie utilisateur :', error);
+                }
+            }
+        },
         hiddeSidebar(){
-            console.log(this.showSidebar)
             this.showSidebar =! this.showSidebar
-            console.log(this.showSidebar)
         },
         backendImage(url) {
             return config.app_local ? config.app_back_debug_url + "/" + url : config.app_live_url + "/" + url
@@ -50,27 +86,6 @@ export default {
                     if(!res.data.error){
                         this.etudiants = res.data.user
                     }
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        },
-        async getListeVoyage(){
-            this.loading = true
-            await axios.get("/voyage/get-all")
-                .then(res => {
-                    if(!res.data.error){
-                        this.voyages = res.data.data
-                        this.voyages.sort((a, b) => {
-                            // Convertissez les dates en objets Date pour les comparer
-                            const dateA = new Date(a.created_at);
-                            const dateB = new Date(b.created_at);
-
-                            // Triez par ordre décroissant en soustrayant les dates
-                            return dateB - dateA;
-                        });
-                    }
-                    this.loading = false
                 })
                 .catch(error => {
                     console.log(error)
@@ -100,5 +115,5 @@ export default {
             const date = new Date(dateString);
             return date.toLocaleString("fr-FR", options);
         },
-    },
+    }
 }

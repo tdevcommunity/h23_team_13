@@ -7,7 +7,6 @@
       <div :class="showSidebar ? 'tw-fixed':'tw-hidden lg:tw-fixed'" class="tw-inset-y-0 tw-flex-wrap tw-items-center tw-justify-between lg:tw-block tw-w-full tw-p-0 lg:tw-my-4 tw-overflow-y-auto tw-antialiased tw-transition-transform tw-duration-200 tw-bg-white tw-border-0 tw-shadow-xl dark:tw-shadow-none dark:tw-bg-gray-800 tw-max-w-[230px] ease-nav-brand lg:tw-ml-6 tw-rounded-r-2xl lg:tw-rounded-2xl xl:tw-left-0 xl:tw-translate-x-0" style="z-index: 999" aria-expanded="false">
         <div class="tw-h-20">
           <div class="tw-block tw-px-8 tw-py-6 tw-m-0 tw-text-sm tw-whitespace-nowrap tw-flex tw-items-center dark:tw-text-white tw-text-gray-700">
-<!--            <img class="tw-h-20 tw-w-32 tw-bg-transparent" src="@/assets/img/logos/tdev-tag.png" alt="Tdev logo">-->
             <img src="@/assets/img/logos/tdev.png" class="tw-inline tw-h-full tw-max-w-full tw-transition-all tw-duration-200 dark:tw-hidden ease-nav-brand tw-max-h-14 tw-w-full" alt="main_logo" />
           </div>
         </div>
@@ -25,18 +24,26 @@
               </span>
             </li>
 
-            <!--        <li class="tw-w-full tw-mt-4">-->
-            <!--          <h6 class="tw-pl-6 tw-ml-2 tw-text-xs tw-font-bold tw-leading-tight tw-uppercase dark:tw-text-white tw-opacity-60">Account pages</h6>-->
-            <!--        </li>-->
+                    <li class="tw-w-full tw-mt-4">
+                      <h6 class="tw-pl-6 tw-ml-2 tw-text-xs tw-font-bold tw-leading-tight tw-uppercase dark:tw-text-white tw-opacity-60">Mon compte</h6>
+                    </li>
 
-            <!--        <li class="tw-mt-0.5 tw-w-full">-->
-            <!--          <NuxtLink to="/admin/profil" class="dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">-->
-            <!--            <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">-->
-            <!--              <v-icon  size="22" color="green darken-1">mdi-account-child</v-icon>-->
-            <!--            </div>-->
-            <!--            <span class="tw-ml-1 tw-duration-300 tw-opacity-100 tw-text-gray-800 tw-pointer-events-none ease">Profile</span>-->
-            <!--          </NuxtLink>-->
-            <!--        </li>-->
+            <li class="tw-mt-0.5 tw-w-full">
+              <span @click="$router.push('/admin/profil'); showSidebar = false" :class="$route.fullPath === '/admin/profil' ? 'tw-bg-gradient-to-tr tw-from-[#2b6d57] tw-to-[#2b6d57] w-opacity-80' : ''" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
+                <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">
+                  <v-icon :color="$route.fullPath === '/admin/profil' ? 'white' : '#2b6d57'"  size="22">mdi-calendar</v-icon>
+                </div>
+                <span :class="$route.fullPath === '/admin/profil' ? 'tw-text-white' : 'tw-text-[#2b6d57]'" class="tw-ml-1 tw-duration-300 tw-font-medium tw-pointer-events-none ease">Profile</span>
+              </span>
+            </li>
+                    <li class="tw-mt-0.5 tw-w-full">
+                      <span @click="logout()" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
+                        <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">
+                          <v-icon  size="22" color="green darken-4">mdi-logout-variant</v-icon>
+                        </div>
+                        <span class="tw-ml-1 tw-duration-300 tw-opacity-100 tw-text-[#2b6d57] tw-font-medium tw-pointer-events-none ease">Se déconnecter</span>
+                      </span>
+                    </li>
           </ul>
         </div>
       </div>
@@ -55,10 +62,12 @@
                 <li v-if="$route.path === '/admin/dashboard'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Dashboard</li>
                 <li v-if="$route.path === '/admin/members'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
                 <li v-if="$route.path === '/admin/profil'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Profile</li>
+                <li v-if="$route.path === '/admin/supply'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Recrutement</li>
               </ol>
               <h6 v-if="$route.path === '/admin/dashboard'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Dashboard</h6>
               <h6 v-if="$route.path === '/admin/members'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Liste des membres</h6>
               <h6 v-if="$route.path === '/admin/profil'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations personnelles</h6>
+              <h6 v-if="$route.path === '/admin/supply'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Recrutement</h6>
             </nav>
 
             <div class="tw-flex tw-items-center tw-justify-end tw-mt-2 tw-grow sm:tw-mt-0 sm:tw-mr-6 md:tw-mr-0 lg:basis-auto">
@@ -104,6 +113,7 @@
 <script>
 import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
+
 export default {
   components: {Navbar, Sidebar},
   // middleware: 'isauthenticated',
@@ -126,28 +136,22 @@ export default {
         {
           name: "Evénements",
           fullname: "Offres d'emploi",
-          path: "/admin/events",
+          path: "/admin/supply",
           mdi_icon: "mdi-calendar-star"
         },
-        {
-          name: "Profile",
-          fullname: "Profile",
-          path: "/admin/profil",
-          mdi_icon: "mdi-calendar"
-        },
+        // {
+        //   name: "Profile",
+        //   fullname: "Profile",
+        //   path: "/admin/profil",
+        //   mdi_icon: "mdi-calendar"
+        // },
       ],
     }
   },
 
-  mounted() {
-  },
-
-  watch: {},
   methods: {
     hiddeSidebar(){
-      console.log(this.showSidebar)
       this.showSidebar =! this.showSidebar
-      console.log(this.showSidebar)
     },
   },
 }

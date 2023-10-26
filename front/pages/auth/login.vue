@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div>
     <section class="tw-min-h-screen tw-flex tw-items-center tw-text-white ">
       <div class="lg:tw-fle tw-w-1/2 tw-hidden tw-bg-green-500 tw-bg-no-repeat tw-bg-cover tw-relative tw-items-center" style="background-image: url(https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
         <div class="tw-absolute tw-bg-[#4cd436 tw-opacity-60 tw-inset-0 tw-z-0"></div>
@@ -36,12 +36,16 @@
         <p class="tw-text-gray-100">
           ou utilisé votre compte email
         </p>
+
+        <span v-if="loginError" class="tw-text-red-600 tw-text-xs tw-text-center">
+          {{ errorMessage }}
+        </span>
         <form action="" class="sm:tw-w-2/3 tw-w-full tw-px-4 lg:tw-px-0 tw-mx-auto">
           <div class="tw-pb-2 tw-pt-4">
-            <input type="email" name="email" id="email" placeholder="Email" class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none">
+            <input v-model="auth.email" type="email" name="email" id="email" placeholder="Email" class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none">
           </div>
           <div class="tw-pb-2 tw-pt-4">
-            <input class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none" type="password" name="password" id="password" placeholder="Mot de passe">
+            <input v-model="auth.password" class="tw-block tw-w-full tw-p-4 tw-text-lg tw-rounded-lg tw-bg-gray-100 tw-text-gray-800 placeholder:tw-text-gray-800 tw-text-sm focus:tw-outline-none" type="password" name="password" id="password" placeholder="Mot de passe">
           </div>
           <div class="tw-flex tw-justify-between tw-items-center tw-w-full tw-mt-2">
             <NuxtLink to="/auth/register" class="tw-text-xs tw-text-white hover:tw-underline">Je n'ai pas encore de compte!</NuxtLink>
@@ -51,7 +55,7 @@
           </div>
 
           <div class="tw-pb-2 tw-pt-4">
-            <NuxtLink to="/admin/dashboard" class="hoover:tw-cursor-pointer tw-uppercase tw-block tw-w-full tw-p-3 tw-text-base tw-rounded-lg tw-bg-[#27d576] focus:tw-outline-none">Se Connecter</NuxtLink>
+            <v-btn :loading="is_loading" @click="login()" class="hoover:tw-cursor-pointer tw-uppercase tw-block tw-text-white tw-w-full tw-h-10 tw-text-base tw-rounded-lg tw-bg-[#27d576] focus:tw-outline-none">Se Connecter</v-btn>
           </div>
 
           <div class="tw-p-4 tw-text-center tw-right-0 tw-left-0 tw-flex tw-justify-center tw-space-x-4 tw-mt-16 lg:tw-hidden ">
@@ -69,7 +73,11 @@
       </div>
     </div>
     </section>
-  </body>
+
+    <v-snackbar v-model="snackbar" :color="snackbarColor" :timeout="2000">
+      {{ snackbar_text }}
+    </v-snackbar>
+  </div>
 </template>
 
 <script>
@@ -77,8 +85,9 @@
 export default {
   data(){
     return {
-      startLogin: false,
+      is_loading: false,
       loginError: false,
+      errorMessage: "",
       auth: {
         email: "",
         password: "",
@@ -96,14 +105,28 @@ export default {
         this.snackbar = true;
         return;
       }
-      this.startLogin = true
+      this.is_loading = true
       let response = null;
       this.loginError = false;
       let error = true;
       try {
         response = await axios
-            .post("/admin/login", this.auth)
-            .then((resp) => resp.data)
+            .post("/auth/login", this.auth)
+            .then((resp) => {
+              if (resp.data?.error) {
+                this.loginError = true;
+                this.errorMessage = resp.data.message;
+                this.is_loading = false;
+              } else if (resp && !resp.data.error) {
+                 this.$store.dispatch("auth/saveToken", {
+                  token: resp.data.token,
+                  user: resp.data.user,
+                  last_connexion_time: new Date().getTime(),
+                });
+                this.is_loading = false;
+                this.$router.replace('/admin/dashboard');
+              }
+            })
             .catch((error) => {
               this.loginError = true;
             });
@@ -111,18 +134,7 @@ export default {
       } catch (e) {
         this.loginError = true;
       }
-
-      this.startLogin = false;
-      if (response.error) {
-        this.loginError = true;
-      } else if (response && !response.error) {
-        await this.$store.dispatch("auth/saveToken", {
-          token: response.token,
-          user: response.user,
-          last_connexion_time: new Date().getTime(),
-        });
-        this.$router.replace('/admin/dashboard');
-      }
+      this.is_loading = false;
     },
   },
 }
