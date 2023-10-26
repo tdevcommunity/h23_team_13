@@ -25,7 +25,7 @@ Le projet vise à concevoir et à développer une plateforme en ligne pour la ge
 ### Front-end (Nuxt.js)
 1. Clonez le projet depuis GitHub :
     ```bash
-    git clone https://github.com/votre-utilisateur/h23_team_13.git
+    git clone https://github.com/tdevcommunity/h23_team_13.git
     cd h23_team_13
     ```
 
