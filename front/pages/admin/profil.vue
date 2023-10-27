@@ -150,49 +150,49 @@ Non renseigné
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
                 >
-                <input v-model="user_info.lastname" type="text" name="first-name" id="first-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
+                <input v-model="user_info.lastname" type="text" name="first-name" id="first-name" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Bonnie" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Prénoms*</label
                 >
-                <input v-model="user_info.firstname" type="text" name="last-name" id="last-name" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
+                <input v-model="user_info.firstname" type="text" name="last-name" id="last-name" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="Green" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays*</label
                 >
-                <input v-model="user_info.country" type="text" name="country" id="country" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
+                <input v-model="user_info.country" type="text" name="country" id="country" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="United States" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="city" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adresse</label
                 >
-                <input v-model="user_info.adresse" type="text" name="city" id="city" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
+                <input v-model="user_info.adresse" type="text" name="city" id="city" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. San Francisco" required />
               </div>
 
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email*</label
                 >
-                <input v-model="user_info.email" type="email" name="email" id="email" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
+                <input v-model="user_info.email" type="email" name="email" id="email" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="example@company.com" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Numéro de téléphone*</label
                 >
-                <input v-model="user_info.telephone" type="number" name="phone-number" id="phone-number" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
+                <input v-model="user_info.telephone" type="number" name="phone-number" id="phone-number" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="e.g. +(12)3456 789" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance*</label
                 >
-                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
+                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />
               </div>
 
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Genre*</label
                 >
-                <select v-model="user_info.sex" type="date" name="sex" id="sex" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" required >
+                <select v-model="user_info.sex" type="date" name="sex" id="sex" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" required >
                   <option value="Féminin">Féminin</option>
                   <option value="Masculin">Masculin</option>
                   <option value="Autre">Autre</option>
                 </select>
-<!--                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />-->
+<!--                <input v-model="user_info.birthday" type="date" name="birthday" id="birthday" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="15/08/1990" required />-->
               </div>
 
               <div class="tw-col-span-6 sm:tw-col-span-3">
@@ -243,17 +243,17 @@ Non renseigné
 <!--              <div class="tw-col-span-6 sm:tw-col-span-3">-->
 <!--                <label for="current-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Current password</label-->
 <!--                >-->
-<!--                <input type="text" name="current-password" id="current-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />-->
+<!--                <input type="text" name="current-password" id="current-password" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />-->
 <!--              </div>-->
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="new-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nouveau mot de passe</label
                 >
-                <input type="text" name="new-password" id="new-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
+                <input type="text" name="new-password" id="new-password" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
               <div class="tw-col-span-6 sm:tw-col-span-3">
                 <label for="confirm-password" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Confirmer le nouveau mot de passe</label
                 >
-                <input type="text" name="confirm-password" id="confirm-password" class="tw-bg-white tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-200 focus:tw-ring-2 focus:tw-ring-green-700 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
+                <input type="text" name="confirm-password" id="confirm-password" class="tw-text-gray-800 placeholder:tw-text-gray-700 tw-shadow-sm tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-bg-gray-200 tw-block tw-w-full tw-p-2 focus:tw-outline-none" placeholder="••••••••" required />
               </div>
 
               <div class="tw-col-span-full">

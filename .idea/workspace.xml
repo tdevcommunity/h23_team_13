@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="be485312-cf11-49bc-9162-9ba777f19cde" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/layouts/master.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/admin/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/admin/members/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/members/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/admin/profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/profil.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/admin/supply.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/supply.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/auth/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/auth/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/auth/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/auth/register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/tdev-tag1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/tdev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +104,7 @@
       <workItem from="1698304052194" duration="8766000" />
       <workItem from="1698326691118" duration="21740000" />
       <workItem from="1698401652529" duration="11562000" />
-      <workItem from="1698416703097" duration="7993000" />
+      <workItem from="1698416703097" duration="10290000" />
     </task>
     <servers />
   </component>

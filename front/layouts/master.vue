@@ -29,7 +29,7 @@
                     </li>
 
             <li class="tw-mt-0.5 tw-w-full">
-              <span @click="$router.push('/admin/profil'); showSidebar = false" :class="$route.fullPath === '/admin/profil' ? 'tw-bg-gradient-to-tr tw-from-[#2b6d57] tw-to-[#2b6d57] w-opacity-80' : ''" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
+              <span @click="$router.push('/admin/profil'); showSidebar = false" :class="$route.fullPath === '/admin/profil' ? 'tw-bg-[#2b6d57]' : ''" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
                 <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">
                   <v-icon :class="$route.fullPath === '/admin/profil' ? 'tw-text-white' : 'tw-text-[#2b6d57] dark:tw-text-white'"  size="22">mdi-calendar</v-icon>
                 </div>

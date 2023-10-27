@@ -31,46 +31,47 @@
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
                             >
-                            <input v-model="form.lastname" type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
+                            <input v-model="form.lastname" type="text" name="last-name" id="last-name" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Bonnie" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="last-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Prénoms*</label
                             >
-                            <input v-model="form.firstname" type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
+                            <input v-model="form.firstname" type="text" name="first-name" id="first-name" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Green" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="email" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Email*</label
                             >
-                            <input v-model="form.email" type="email" name="email" id="email" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
+                            <input v-model="form.email" type="email" name="email" id="email" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="example@company.com" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="phone-number" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Téléphone*</label
                             >
-                            <input v-model="form.telephone" type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
+                            <input v-model="form.telephone" type="number" name="phone-number" id="phone-number" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. +228 96690981" required />
                           </div>
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays de résidence*</label
                             >
-                            <input v-model="form.country" type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Togo" required />
+                            <input v-model="form.country" type="text" name="country" id="country" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Togo" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="adress" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Adresse</label
                             >
-                            <input v-model="form.adresse" type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
+                            <input v-model="form.adresse" type="text" name="adress" id="adress" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="e.g. California" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Date de naissance*</label
                             >
-                            <input v-model="form.birthday" type="date" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
+                            <input v-model="form.birthday" type="date" name="birthday" id="birthday" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="birthday" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Genre*</label
                             >
-                            <select v-model="form.sex" type="date" name="sex" id="sex" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required >
-                            <option value="Féminin">Féminin</option>
+                            <select v-model="form.sex" type="date" name="sex" id="sex" class="tw-shadow-sm tw-bg-gray-200 focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg ring-2 ring-gray-500 focus:ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="15/08/1990" required >
+                              <option value="" disabled selected>Sélectionnez votre genre</option>
+                              <option value="Féminin">Féminin</option>
                             <option value="Masculin">Masculin</option>
                             <option value="Autre">Autre</option>
                             </select>
@@ -80,7 +81,6 @@
                             <label class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Fonction*</label
                             >
                             <v-autocomplete
-                                class="v-text-field"
                                 :items="fonctions"
                                 v-model="form.fonction"
                                 outlined dense
@@ -193,4 +193,18 @@ export default {
 .bg-image {
   background-image: url(@/assets/img/illustration1.jpg);
 }
+/*.ring-2 {*/
+/*  border-width: 1px;*/
+/*}*/
+
+/*!* Couleur de l'anneau en état normal *!*/
+/*.ring-gray-500 {*/
+/*  border-color: #eeeeee; !* Couleur grise *!*/
+/*}*/
+
+/*!* Couleur de l'anneau lorsqu'il est en focus *!*/
+/*:focus {*/
+/*  !* Vous pouvez personnaliser la couleur en fonction de vos besoins *!*/
+/*  outline: 2px solid #22C55E; !* Couleur verte en focus *!*/
+/*}*/
 </style>
