@@ -101,7 +101,16 @@ Une fois que votre application est installée et configurée, voici comment l'ut
 
 3. Vous pouvez maintenant utiliser l'application en interagissant avec l'interface front-end et en utilisant les fonctionnalités de gestion des membres et d'évaluation de CV.
 
-##Aperçu
+## Captures d'écran de l'Interface Utilisateur
+![Capture d'écran](./reg1.png)
+![Capture d'écran](reg2.png)
+![Capture d'écran](log.png)
+![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.png)
+
 
 
 ## Contributions
