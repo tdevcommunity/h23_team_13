@@ -27,6 +27,7 @@ Le projet vise à concevoir et à développer une plateforme en ligne pour la ge
     ```bash
     git clone https://github.com/tdevcommunity/h23_team_13.git
     cd h23_team_13
+    git pull origin master
     ```
 
 2. Accédez au répertoire du front-end :
