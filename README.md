@@ -58,7 +58,7 @@ Comment configurer le projet ? Voici les informations sur les fichiers de config
 ```bash
 # Configuration front-end (Nuxt.js)
 cd front
-cp .env.example .env
+cp config.js.example config.js
 # Modifier les variables d'environnement au besoin
 
 # Configuration back-end (Laravel)
