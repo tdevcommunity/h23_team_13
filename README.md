@@ -102,14 +102,16 @@ Une fois que votre application est installée et configurée, voici comment l'ut
 3. Vous pouvez maintenant utiliser l'application en interagissant avec l'interface front-end et en utilisant les fonctionnalités de gestion des membres et d'évaluation de CV.
 
 ## Captures d'écran de l'Interface Utilisateur
-![Capture d'écran](./reg1.png)
-![Capture d'écran](reg2.png)
-![Capture d'écran](log.png)
-![Capture d'écran](screenshot.png)
-![Capture d'écran](screenshot.png)
-![Capture d'écran](screenshot.png)
-![Capture d'écran](screenshot.png)
-![Capture d'écran]([screenshot.png](https://github.com/tdevcommunity/h23_team_13/blob/main/dashb.PNG))
+![Register_1](https://github.com/tdevcommunity/h23_team_13/blob/main/reg1.PNG)
+![Register_2](https://github.com/tdevcommunity/h23_team_13/blob/main/reg2.PNG)
+![Login](https://github.com/tdevcommunity/h23_team_13/blob/main/log.PNG)
+![Dashboard](https://github.com/tdevcommunity/h23_team_13/blob/main/dashb.PNG)
+![Profil_1](https://github.com/tdevcommunity/h23_team_13/blob/main/profil1.PNG)
+![Profil_2](https://github.com/tdevcommunity/h23_team_13/blob/main/profil2.PNG)
+![Detail_1](https://github.com/tdevcommunity/h23_team_13/blob/main/detail1.PNG)
+![Detail_2](https://github.com/tdevcommunity/h23_team_13/blob/main/detail2.PNG)
+![Membres](https://github.com/tdevcommunity/h23_team_13/blob/main/members.PNG)
+![Recrutements](https://github.com/tdevcommunity/h23_team_13/blob/main/supply.PNG)
 
 
 
