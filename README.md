@@ -36,7 +36,7 @@ Le projet vise à concevoir et à développer une plateforme en ligne pour la ge
 
 3. Installez les dépendances nécessaires avec npm :
     ```bash
-    npm run install ou yarn install
+    npm install ou yarn install
     ```
 
 ### Back-end (Laravel)
