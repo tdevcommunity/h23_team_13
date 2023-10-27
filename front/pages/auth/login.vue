@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="tw-min-h-screen tw-flex tw-items-center tw-text-white ">
+    <section style="background: linear-gradient(to bottom right, black, #1f2937, #27d576);" class="tw-min-h-screen tw-flex tw-items-center tw-text-white ">
       <div class="lg:tw-fle tw-w-1/2 tw-hidden tw-bg-green-500 tw-bg-no-repeat tw-bg-cover tw-relative tw-items-center" style="background-image: url(https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
         <div class="tw-absolute tw-bg-[#4cd436 tw-opacity-60 tw-inset-0 tw-z-0"></div>
         <div class="tw-w-full tw-px-24 tw-z-10">
@@ -21,10 +21,9 @@
       </div>
 
       <div class="lg:tw-w-1/2 tw-w-full tw-flex tw-items-center tw-justify-center tw-text-center md:tw-px-16 tw-px-0 tw-z-0">
-        <div class="tw-absolute tw-bg-red-60 tw-z-10 tw-inset-0 tw-bg-no-repeat tw-items-center">
-<!--        <div style="" class="tw-absolute tw-bg-gradient-to-br tw-from-black tw-via-gray-800 tw-to-[#27d576] tw-inset-0 tw-z-0"></div>-->
-        <div style="background: linear-gradient(to bottom right, black, #1f2937, #27d576);" class="tw-absolute tw-inset-0 tw-z-0"></div>
-      </div>
+<!--        <div class="tw-absolute tw-bg-red-60 tw-z-10 tw-inset-0 tw-bg-no-repeat tw-items-center">-->
+<!--        <div style="background: linear-gradient(to bottom right, black, #1f2937, #27d576);" class="tw-absolute tw-inset-0 tw-z-0"></div>-->
+<!--        </div>-->
       <div class="tw-w-full tw-py-6 tw-z-20">
         <h1 class="tw-my-6 tw-flex tw-justify-center">
           <img class="tw-h-20 tw-w-32 tw-bg-transparent" src="@/assets/img/logos/tdev-tag.png" alt="Tdev logo">

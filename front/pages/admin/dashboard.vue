@@ -91,7 +91,7 @@
     </div>
 
     <!-- cards row 2 -->
-    <div class="tw-flex tw-flex-wrap tw-mt-6 tw--mx-3">
+    <div class="tw-flex tw-flex-wrap tw-gap-6 lg:tw-gap-0 tw-mt-6 tw--mx-3">
       <div v-for="i in 2" :key="i" class="tw-w-full tw-max-w-full tw-px-3 tw-mt-0 lg:tw-w-6/12 lg:tw-flex-none">
         <div class="tw-border-black/12.5 tw-shadow-xl dark:shadow-dark-xl tw-relative tw-flex tw-min-w-0 tw-flex-col tw-break-words tw-rounded-2xl tw-border-0 tw-border-solid tw-bg-white dark:tw-bg-gray-800 tw-bg-clip-border">
           <div class="tw-p-4 tw-pb-0 tw-mb-2 tw-rounded-t-4 tw-flex tw-justify-between tw-w-full">
