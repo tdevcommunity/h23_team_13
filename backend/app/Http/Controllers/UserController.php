@@ -132,6 +132,11 @@ class UserController extends Controller
 
     }
 
+    public function findMember($id){
+            $user = User::find($id)->first();
+            return $this->resp(false, 200, $user, "Operation effectuée avec succes", null);
+        }
+
     public function resp($error, $code, $data, $message, $token)
         {
 
