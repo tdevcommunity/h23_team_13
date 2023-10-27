@@ -102,17 +102,62 @@ Une fois que votre application est installée et configurée, voici comment l'ut
 3. Vous pouvez maintenant utiliser l'application en interagissant avec l'interface front-end et en utilisant les fonctionnalités de gestion des membres et d'évaluation de CV.
 
 ## Captures d'écran de l'Interface Utilisateur
-![Register_1](https://github.com/tdevcommunity/h23_team_13/blob/main/reg1.PNG)
-![Register_2](https://github.com/tdevcommunity/h23_team_13/blob/main/reg2.PNG)
-![Login](https://github.com/tdevcommunity/h23_team_13/blob/main/log.PNG)
-![Dashboard](https://github.com/tdevcommunity/h23_team_13/blob/main/dashb.PNG)
-![Profil_1](https://github.com/tdevcommunity/h23_team_13/blob/main/profil1.PNG)
-![Profil_2](https://github.com/tdevcommunity/h23_team_13/blob/main/profil2.PNG)
-![Detail_1](https://github.com/tdevcommunity/h23_team_13/blob/main/detail1.PNG)
-![Detail_2](https://github.com/tdevcommunity/h23_team_13/blob/main/detail2.PNG)
-![Membres](https://github.com/tdevcommunity/h23_team_13/blob/main/members.PNG)
-![Recrutements](https://github.com/tdevcommunity/h23_team_13/blob/main/supply.PNG)
 
+### Processus d'Inscription
+La première étape du processus d'inscription de l'utilisateur.
+
+![Register_1](https://github.com/tdevcommunity/h23_team_13/blob/main/reg1.PNG)
+
+La deuxième étape du processus d'inscription, montrant les champs et les informations nécessaires pour créer un compte.
+
+![Register_2](https://github.com/tdevcommunity/h23_team_13/blob/main/reg2.PNG)
+
+
+### Connexion Utilisateur
+L'écran de connexion où les utilisateurs peuvent accéder à leurs comptes.
+
+![Login](https://github.com/tdevcommunity/h23_team_13/blob/main/log.PNG)
+
+
+### Interface du Tableau de Bord
+Cette capture d'écran montre l'interface principale de notre application, mettant en évidence les informations essentielles pour l'utilisateur.
+
+![Dashboard](https://github.com/tdevcommunity/h23_team_13/blob/main/dashb.PNG)
+
+
+### Profil de l'Utilisateur
+Le profil d'un utilisateur, présentant des informations de base et des options de personnalisation.
+
+![Profil_1](https://github.com/tdevcommunity/h23_team_13/blob/main/profil1.PNG)
+
+
+Une autre vue du profil utilisateur, mettant en évidence d'autres fonctionnalités et informations.
+
+![Profil_2](https://github.com/tdevcommunity/h23_team_13/blob/main/profil2.PNG)
+
+
+### Détails du Profil Utilisateur
+Voici une vue détaillée du profil utilisateur, affichant des informations générales du profil ainsi que les compétences et les informations complémentaires.
+
+![Détail 1](https://github.com/tdevcommunity/h23_team_13/blob/main/detail1.PNG)
+
+
+Une autre perspective des détails du profil utilisateur, montrant des informations complémentaires.
+
+![Détail 2](https://github.com/tdevcommunity/h23_team_13/blob/main/detail2.PNG)
+
+
+
+### Liste des Membres
+Cette image illustre la liste des membres de notre communauté ou plateforme.
+
+![Membres](https://github.com/tdevcommunity/h23_team_13/blob/main/members.PNG)
+
+
+### Offres d'emplois
+Cette image illustre la liste des offres d'emplois en vigueur sur notre plateforme.
+
+![Recrutements](https://github.com/tdevcommunity/h23_team_13/blob/main/supply.PNG)
 
 
 ## Contributions
