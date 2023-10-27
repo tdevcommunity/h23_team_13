@@ -13,7 +13,17 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        tms: {
+          green: "#27d576",
+          800: "#744B2D",
+          "hover-btn-500": "#b45309",
+          "hover-btn-800": "#7c2d12",
+
+        },
+      },
+    },
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),

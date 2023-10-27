@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!user_info" class="tw-bg-white tw-text-sm tw-p-6 tw-w-full tw-text-center tw-rounded-2xl">
+    <div v-if="!user_info" class="tw-bg-white dark:tw-bg-[#2b6d57] tw-text-sm tw-p-6 tw-w-full tw-text-center tw-rounded-2xl">
       Chargement
     </div>
     <div v-else class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 md:tw-gap-6">
@@ -96,34 +96,34 @@
           <div class="tw-flow-root">
             <h3 class="tw-text-xl tw-font-bold">Compétences</h3>
             <ul class="tw-flex tw-flex-wrap tw-mt-4 tw-pl-0">
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Brand Design
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Logo Design
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Mobile App Design
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 UI Design
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 React Developer
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Wordpress
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Sketch
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Figma
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Prototyping
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-green-500 tw-to-green-700 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2">
+              <li class="btn-gradient-green tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2">
                 Database
               </li>
             </ul>
@@ -133,28 +133,28 @@
           <div class="tw-flow-root">
             <h3 class="tw-text-xl tw-font-bold">Hobbies</h3>
             <ul class="tw-flex tw-flex-wrap tw-mt-4 tw-pl-0">
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Football
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Dogs
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Gaming
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Movies
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Travelling
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Surf
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2 tw-mr-2">
                 Ice Skating
               </li>
-              <li class="tw-bg-gradient-to-br tw-from-sky-400 tw-to-sky-600 tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2">
+              <li class="btn-gradient-sky tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-px-3 tw-py-1.5 tw-rounded-md tw-mb-2">
                 The Witcher
               </li>
             </ul>
@@ -331,5 +331,9 @@ export default {
 </script>
 
 <style scoped>
-
+.btn-gradient-green {
+  background: linear-gradient(to bottom right, #22c55e, #15803d);
+}.btn-gradient-sky {
+  background: linear-gradient(to bottom right, #38bdf8, #0284c7);
+}
 </style>

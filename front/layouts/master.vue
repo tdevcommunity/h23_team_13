@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="tw-relative tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-gray-900 leading-default tw-h-full tw-bg-gray-50 tw-text-gray-500">
+    <div class="tw-relative tw-m-0 tw-font-sans tw-text-base tw-antialiased tw-font-normal dark:tw-bg-[#2b6d57] leading-default tw-h-full tw-bg-gray-50 tw-text-gray-500">
 <!--      <div class="tw-fixed tw-top-0 tw-inset-x-0 tw-rounded-b-lg tw-w-full tw-bg-gradient-to-tr tw-from-[#2b6d57] tw-via-[#07d770] tw-to-gray-800" style="height: 280px"></div>-->
       <div class="tw-fixed tw-top-0 tw-inset-x-0 tw-w-full tw-bg-[#2b6d57]" style="height: 280px"></div>
       <!-- sidenav  -->
@@ -16,7 +16,7 @@
         <div class="tw-items-center tw-block tw-w-auto tw-max-h-screen tw-overflow-auto tw-grow tw-basis-full">
           <ul class="tw-flex tw-flex-col tw-pl-0 tw-mb-0">
             <li v-for="(link, index) in links" :key="index" class="tw-mt-0.5 tw-w-full">
-              <span @click="$router.push(link.path); showSidebar = false" :class="$route.fullPath === link.path ? 'tw-bg-gradient-to-tr tw-from-[#2b6d57] tw-to-[#2b6d57]' : ''" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
+              <span @click="$router.push(link.path); showSidebar = false" :class="$route.fullPath === link.path ? 'tw-bg-[#2b6d57]' : ''" class="hover:tw-cursor-pointer dark:tw-text-white dark:tw-opacity-80 tw-py-2 tw-rounded-lg tw-text-sm ease-nav-brand tw-my-0 tw-mx-2 tw-flex tw-items-center tw-whitespace-nowrap tw-px-4 tw-transition-colors">
                 <div class="tw-mr-2 tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-lg tw-bg-center tw-stroke-0 tw-text-center xl:tw-p-2.5">
                   <v-icon :class="$route.fullPath === link.path ? 'tw-text-white' : 'tw-text-[#2b6d57] dark:tw-text-white'"  size="22">{{ link.mdi_icon }}</v-icon>
                 </div>
@@ -49,7 +49,7 @@
       </div>
       <!-- end sidenav -->
 
-      <main class="tw-relative tw-h-full tw-max-h-screen tw-transition-all tw-duration-200 tw-ease-in-out lg:tw-ml-[255px] tw-rounded-xl">
+      <main class="tw-relative tw-h-full tw-min-h-screen tw-transition-all tw-duration-200 tw-ease-in-out lg:tw-ml-[255px] tw-rounded-xl">
         <!-- Navbar -->
         <div class="tw-relative tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-px-0 tw-py-2 tw-mx-4 lg:tw-mx-6 tw-transition-all tw-ease-in tw-shadow-none tw-duration-250 tw-rounded-2xl lg:tw-flex-nowrap lg:tw-justify-start" navbar-main navbar-scroll="false">
           <div class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-1 tw-mx-auto tw-flex-wrap-inherit">
@@ -63,13 +63,13 @@
                 <li v-if="$route.path === '/admin/members'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
                 <li v-if="$route.path === '/admin/profil'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Profile</li>
                 <li v-if="$route.path === '/admin/supply'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Recrutement</li>
-                <li v-if="$route.path.includes('members')" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
+                <li v-if="$route.path.includes('members/')" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
               </ol>
               <h6 v-if="$route.path === '/admin/dashboard'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Dashboard</h6>
               <h6 v-if="$route.path === '/admin/members'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Liste des membres</h6>
               <h6 v-if="$route.path === '/admin/profil'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations personnelles</h6>
               <h6 v-if="$route.path === '/admin/supply'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Recrutement</h6>
-              <h6 v-if="$route.path.includes('members')" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations de l'utilisateur</h6>
+              <h6 v-if="$route.path.includes('members/')" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations de l'utilisateur</h6>
             </nav>
 
             <div class="tw-flex tw-items-center tw-justify-end tw-mt-2 tw-grow sm:tw-mt-0 sm:tw-mr-6 md:tw-mr-0 lg:basis-auto">

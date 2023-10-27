@@ -4,7 +4,7 @@
       <main class="tw-mt-0 tw-transition-all tw-duration-200 tw-ease-in-out">
         <section class="tw-min-h-screen">
           <div class="bg-image tw-bg-top tw-relative tw-flex tw-items-start tw-pt-12 tw-pb- tw-m-4 tw-overflow-hidden tw-bg-cover tw-h-96 tw-rounded-xl">
-            <span class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-center tw-bg-cover tw-bg-gradient-to-br tw-from-black tw-via-gray-800 tw-to-green-700 tw-opacity-90"></span>
+            <span style="background: linear-gradient(to bottom right, black, #1f2937, #27d576);" class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-center tw-bg-cover tw-opacity-90"></span>
             <div class="container tw-z-10">
               <div class="tw-flex tw-flex-wrap tw-justify-center tw--mx-3">
                 <div class="tw-w-full tw-max-w-full tw-px-3 tw-mx-auto tw-mt-0 tw-text-center lg:flex-0 shrink-0 lg:tw-w-5/12">
@@ -94,7 +94,7 @@
                           </div>
 
                           <div class="tw-w-full tw-col-span-6 tw-mt-2">
-                            <v-btn @click.prevent="register()" :loading="btnLoading" class="tw-w-full tw-text-white tw-bg-gradient-to-br tw-from-green-600 tw-to-gray-800 tw-rounded-lg tw-shadow-md tw-shadow-gray-300 hover:tw-scale-[1] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
+                            <v-btn style="background: linear-gradient(to bottom right, #16a34a, #1f2937);" @click.prevent="register()" :loading="btnLoading" class="tw-w-full tw-text-white tw-rounded-lg tw-shadow-md tw-shadow-gray-300 hover:tw-scale-[1] tw-transition-transform tw-font-medium tw-text-sm tw-px-5 tw-py-2.5 tw-text-center" type="submit">
                               Soumettre
                             </v-btn>
 

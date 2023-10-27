@@ -21,8 +21,9 @@
       </div>
 
       <div class="lg:tw-w-1/2 tw-w-full tw-flex tw-items-center tw-justify-center tw-text-center md:tw-px-16 tw-px-0 tw-z-0">
-        <div class="tw-absolute tw-bg-red-60 lg:tw-hidde tw-z-10 tw-inset-0 tw-bg-no-repeat tw-items-center">
-        <div class="tw-absolute tw-bg-gradient-to-br tw-from-black tw-via-gray-800 tw-to-[#27d576] tw-opacity- tw-inset-0 tw-z-0"></div>
+        <div class="tw-absolute tw-bg-red-60 tw-z-10 tw-inset-0 tw-bg-no-repeat tw-items-center">
+<!--        <div style="" class="tw-absolute tw-bg-gradient-to-br tw-from-black tw-via-gray-800 tw-to-[#27d576] tw-inset-0 tw-z-0"></div>-->
+        <div style="background: linear-gradient(to bottom right, black, #1f2937, #27d576);" class="tw-absolute tw-inset-0 tw-z-0"></div>
       </div>
       <div class="tw-w-full tw-py-6 tw-z-20">
         <h1 class="tw-my-6 tw-flex tw-justify-center">
