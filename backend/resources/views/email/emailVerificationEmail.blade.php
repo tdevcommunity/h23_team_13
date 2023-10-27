@@ -175,8 +175,12 @@
                                     <table border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">
-                                                <a href="#" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Vérifier l'adresse e-mail</a>
-                                            </td>
+                                            @if(env('APP_ENV') === "local")
+                                                <a href="http://localhost:3000/auth/login" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Me connecter</a>
+                                            @else
+                                              <a href="https://tms.gnassogroup.com/auth/login" target="_blank" style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Me connecter</a>
+                                            @endif
+                                             </td>
                                         </tr>
                                     </table>
                                 </td>
@@ -189,7 +193,7 @@
                 <!-- start copy -->
                 <tr>
                     <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">
-                        <p style="margin: 0;"></p>
+                        <p style="margin: 0;">Votre Mot de passe de connexion: <strong>{{ $password }}</strong></p>
                     </td>
                 </tr>
                 <!-- end copy -->

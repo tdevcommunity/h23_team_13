@@ -5,7 +5,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",
-    "tailwind": "npx tailwindcss -i ./static/app.css -o ./assets/css/main.css --watch"
+    "tailwind": "npx tailwindcss -i ./static/app.css -o ./static/main.css --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",

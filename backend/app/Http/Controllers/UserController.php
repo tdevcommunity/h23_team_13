@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
+
 class UserController extends Controller
 {
     public function index()
@@ -27,7 +28,7 @@ class UserController extends Controller
                 'code' => 200 ,
                 'message' => 'succes' ]);
         }
-    //
+
     public function register(Request $request){
 
         $validator = Validator::make($request->all(), [
@@ -46,7 +47,7 @@ class UserController extends Controller
 
         $user = User::where('email', $request->email)->first();
         if ($user) {
-            return $this->resp(true, 401, null, "Email deja utiliser", null);
+            return $this->resp(true, 401, null, "L'adresse e-mail que vous avez fournie est déjà associée à un compte.", null);
         }
 
         $image_name = null;
@@ -67,6 +68,8 @@ class UserController extends Controller
             $path = $request->file('avatar')->move('images/user/', $image_name);
         }
 
+        // Générer un mot de passe aléatoire de 6 caractères
+        $randomPassword = Str::random(6);
         $user = User::create([
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
@@ -75,7 +78,7 @@ class UserController extends Controller
             'adresse' => $request->adresse,
             'birthday' => $request->birthday,
             'fonction' => $request->fonction,
-            'password' => Hash::make(123456),
+            'password' => Hash::make($randomPassword),
             'telephone' => $request->telephone,
             'sex' => $request->sex,
             'role' => 3,
@@ -85,9 +88,9 @@ class UserController extends Controller
         $token = $user->createToken('myapptoken')->plainTextToken;
 
         if($user){
-        $is_send_emaiil = Mail::send('email.emailVerificationEmail', ['token' => $token], function($message) use($user){
+        $is_send_emaiil = Mail::send('email.emailVerificationEmail', ['token' => $token, 'password' => $randomPassword], function($message) use($user){
                     $message->to($user->email);
-                    $message->subject("Courrier de vérification de l'e-mail");
+                    $message->subject("Courrier de bienvenue dans la communauté Tdev!");
                 });
         }
 
@@ -129,221 +132,16 @@ class UserController extends Controller
 
     }
 
-
-    public function getEtudiantByRole($role){
-        if($role == 0){
-            $user = User::whereStatus(0)->get();
-        }else{
-            $user = User::whereRole($role)->whereStatus(0)->get();
-        }
-        return $this->resp(false, 200, $user, "Operation effectuee avec succes", null);
-    }
-
-    public function generateCode($item)
-    {
-        $item = str_replace(" ", "", $item);
-        return str_shuffle($item. rand(20, 985));
-    }
-
-
-    public function findMember($id){
-        $user = User::find($id)->first();
-        return $this->resp(false, 200, $user, "Operation effectuée avec succes", null);
-    }
-
-    public function updateAvatar(Request $request){
-
-        $validator = Validator::make($request->all(), [
-            'id' => 'required',
-            'avatar' => 'required'
-        ]);
-
-        if ($validator->fails()) {
-            return $this->resp(true, 400, null, $validator->getMessageBag(), null);
-        }
-
-        $user = User::find($request->id);
-        if (!$user) {
-            return $this->resp(true, 401, null, "Utilisateur introuvable", null);
-        }
-
-        $user->avatar = $request->avatar;
-        $user->save();
-
-        return $this->resp(false, 200, $user, "Operation effectuee avec succes", null);
-
-    }
-
-    public function checkUserByImmatricule(Request $request)
-    {
-
-        $validator = Validator::make($request->all(), [
-            'immatricule' => 'required'
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json($validator->errors());
-        }
-
-        $user = User::whereImmatricule($request->immatricule)->first();
-
-
-        return  $this->resp(false, 200, $user, "succes",null);
-
-    }
-
-    public function update(Request $request)
-    {
-        $user = User::whereId($request->id)->first();
-        if ($user) {
-
-            $validator = Validator::make($request->all(), [
-                'nom' => 'required|string',
-                'prenom' => 'required|string',
-            ]);
-
-            if ($validator->fails()) {
-                return $this->resp(true, 400, null, $validator->getMessageBag(), null);
-            }
-
-            $user->nom = $request->nom;
-            $user->prenom = $request->prenom;
-            $user->save();
-
-            return response()->json([
-                "error" => false,
-                "user" => $user,
-                "message" => "mise à jour avec success",
-                "code" => 200,
-            ]);
-        } else {
-            return response()->json([
-                "error" => true,
-                "message" => "Element non retrouvé",
-                "code" => 400,
-            ]);
-        }
-    }
-
-    public function sendOpt(Request $request){
-        $user = User::where('email', $request->email)->first();
-        if ($user) {
-            return $this->resp(true, 401, null, "Email deja utiliser", null);
-        }
-
-        $user = User::where('immatricule', $request->immatricule)->first();
-        if ($user) {
-            return $this->resp(true, 402, null, "Numero Immatricule deja utiliser", null);
-        }
-
-        $user = User::where('telephone', $request->telephone)->first();
-        if ($user) {
-            return $this->resp(true, 403, null, "Telephone deja utiliser", null);
-        }
-
-        $code = rand(111111,999999);
-        return $this->sendOptByMail($request->email,$code);
-    }
-
-    public function sendOptByMail($email,$code)
-    {
-
-        $data = [
-            'subject' => 'Bienvenue sur e-ticket',
-            'template' => 'otp',
-            'code' => $code
-        ];
-
-
-        try {
-            Mail::to($email)->send(new AuthMail($data));
-            return response()->json([
-                'error' => false,
-                'code' => $code,
-                'message' => 'Mail envoyer !',
-                'status_code' => 200
-            ]);
-        } catch (Exception $th) {
-            return response()->json([
-                'error' => true,
-                'err' => $th,
-                'message' => 'Mail non envoyer !',
-                'status_code' => 400
-            ]);
-        }
-    }
-
-    public function changePassword(Request $request)
-    {
-        $user = User::whereEmail($request->email)->first();
-        if ($user) {
-
-            $user->password = Hash::make($request->password);
-            $user->save();
-
-            return $this->resp(false, 200, null, "Mot de passe modifié avec succes", null);
-
-        } else {
-
-            return $this->resp(true, 400, null, "Utilisateur introuvable", null);
-        }
-    }
-
-    public function motDePasseOublier(Request $request){
-        $user = User::whereEmail($request->email)->first();
-        if($user){
-            $password = rand(1111,9999);//Str::random(8);
-            $this->sendCodeByMail($user->email, $password);
-            return response()->json([
-                'error' => false,
-                'code' => $password,
-                'message' => 'Mail envoyé avec succes !',
-                'status_code' => 200
-            ]);
-        }else{
-
-            return $this->resp(true, 400, null, "Utilisateur introuvable", null);
-        }
-
-    }
-
-
-    public function sendCodeByMail($email, $code)
-    {
-        $data = [
-            'subject' => 'Code de verification',
-            'template' => 'cp',
-            'code' => $code
-        ];
-
-        try {
-            Mail::to($email)->send(new AuthMail($data));
-            return response()->json([
-                'error' => false,
-                'code' => $code,
-                'message' => 'Mail envoyer !',
-                'status_code' => 200
-            ]);
-        } catch (Exception $th) {
-            return response()->json([
-                'error' => true,
-                'bg' => $th,
-                'message' => 'Mail non envoyer !',
-                'status_code' => 400
-            ]);
-        }
-    }
-
     public function resp($error, $code, $data, $message, $token)
-    {
+        {
 
-        return response()->json([
-            'error' => $error,
-            'code' => $code,
-            'user' => $data,
-            'message' => $message,
-            'token' => $token
-        ]);
+            return response()->json([
+                'error' => $error,
+                'code' => $code,
+                'user' => $data,
+                'message' => $message,
+                'token' => $token
+            ]);
 
-    }
+        }
 }

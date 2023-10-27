@@ -4,6 +4,7 @@ export default {
   // Ajoute un titre pour votre application
   css: [
     '@/assets/css/main.css',
+    '@/static/main.css',
     '@/assets/css/nucleo-svg.css',
     '@/assets/css/perfect-scrollbar.css',
     '@/assets/css/soft-ui-dashboard-tailwind.css',
@@ -17,8 +18,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpg' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
+      { rel: 'icon', type: 'image/x-icon', href: '/tdev-tag.png' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: 'https://cdn.tailwindcss.com' }
     ],
   },
 

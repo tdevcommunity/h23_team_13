@@ -25,6 +25,8 @@
                     <div class="tw-bg-white">
                       <h3 class="tw-mb-12 tw-mt-4 tw-text-xl tw-uppercase tw-text-center tw-underline tw-font-bold">Formulaire d'inscription</h3>
                       <form action="#">
+                        <h5 v-if="loginError" class="tw-text-sm tw-text-red-600 tw-text-center">{{ errorMessage}}</h5>
+                        <h5 v-if="isSuccess" class="tw-text-sm tw-mb-4 tw-px-6 tw-py-2 tw-text-white tw-bg-green-400 tw-text-center">Inscription réussie ! Vous recevrez bientôt un e-mail de confirmation. Assurez-vous de vérifier votre boîte de réception.</h5>
                         <div class="tw-grid tw-grid-cols-6 tw-gap-6">
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="first-name" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Nom*</label
@@ -49,7 +51,7 @@
                           <div class="tw-col-span-6 sm:tw-col-span-3">
                             <label for="country" class="tw-block tw-mb-2 tw-text-sm tw-font-medium tw-text-gray-900">Pays de résidence*</label
                             >
-                            <input v-model="form.country" type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="United States" required />
+                            <input v-model="form.country" type="text" name="country" id="country" class="tw-shadow-sm tw-bg-white focus:tw-outline-none placeholder:tw-text-gray-600 tw-text-gray-900 sm:tw-text-sm tw-rounded-lg tw-ring-2 tw-ring-gray-500 focus:tw-ring-green-800 tw-block tw-w-full tw-p-2.5" placeholder="Togo" required />
                           </div>
 
                           <div class="tw-col-span-6 sm:tw-col-span-3">
@@ -121,8 +123,10 @@
 export default {
   data(){
     return {
+      isSuccess: false,
       startLogin: false,
       loginError: false,
+      errorMessage: null,
       btnLoading: false,
       form: {
         firstname: "",
@@ -145,6 +149,9 @@ export default {
   },
   methods: {
     async register(){
+      this.loginError = false
+      this.isSuccess = false
+
       if (!this.form.email || !this.form.firstname || !this.form.lastname || !this.form.sex || !this.form.telephone || !this.form.birthday || !this.form.country || !this.form.fonction) {
         this.snackbar_text = "Veuillez renseigner tous les champs réquis.";
         this.snackbarColor = "error";
@@ -154,6 +161,12 @@ export default {
         this.btnLoading = true;
         await axios.post('/auth/register', this.form)
             .then((res) => {
+              if (res.data?.error) {
+                this.loginError = true;
+                this.errorMessage = res.data.message;
+                this.btnLoading = false;
+                return
+              }
               this.btnLoading = false;
               this.form = {
                 firstname: "",
@@ -165,6 +178,7 @@ export default {
                 country: "",
                 adresse: "",
               };
+              this.isSuccess = true
             })
             .catch((error) => {
               this.btnLoading = false;

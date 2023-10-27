@@ -33,7 +33,7 @@
                         <div class="tw-text-sm tw-font-semibold tw-text-gray-900">Recherche de Développeur Web Full-Stack</div>
                       </div>
                       <div class="tw-flex tw-justify-center tw-items-center tw-pb-4">
-                        <img class="tw-bg-cover tw-rounded-2xl tw-w-full tw-h-[35vh]" src="@/assets/img/igor.jpg" alt="attachment" />
+                        <img class="tw-bg-cover tw-rounded-2xl tw-w-full tw-h-[35vh]" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="attachment" />
                       </div>
                       <div class="tw-flex tw-flex-col">
                         <div class="tw-pb-4 tw-text-sm tw-font-normal tw-text-gray-700">
