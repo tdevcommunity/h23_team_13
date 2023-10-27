@@ -87,7 +87,7 @@
               Curriculum Vitae
             </h3>
             <div class="tw-flex tw-space-x-3">
-              <a href="/assets/pdfs/Igor_BALLO_Fullstack_Developper.pdf" target="_blank" class="tw-bg-orange-500 tw-text-white tw-text-sm tw-rounded tw-px-6 tw-py-2">Télecherger le CV</a>
+              <a :href="backendPdf('pdfs/Igor_BALLO_Fullstack_Developper.pdf')" target="_blank" class="tw-bg-orange-500 tw-text-white tw-text-sm tw-rounded tw-px-6 tw-py-2">Télecherger le CV</a>
             </div>
           </div>
         </div>

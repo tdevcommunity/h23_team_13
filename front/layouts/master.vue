@@ -63,11 +63,13 @@
                 <li v-if="$route.path === '/admin/members'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
                 <li v-if="$route.path === '/admin/profil'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Profile</li>
                 <li v-if="$route.path === '/admin/supply'" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Recrutement</li>
+                <li v-if="$route.path.includes('members')" class="tw-text-sm tw-pl-2 tw-text-black tw-font-medium tw-capitalize tw-leading-normal before:tw-float-left before:tw-pr-2 before:tw-text-black before:tw-content-['/']" aria-current="page"> Membres</li>
               </ol>
               <h6 v-if="$route.path === '/admin/dashboard'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Dashboard</h6>
               <h6 v-if="$route.path === '/admin/members'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Liste des membres</h6>
               <h6 v-if="$route.path === '/admin/profil'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations personnelles</h6>
               <h6 v-if="$route.path === '/admin/supply'" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Recrutement</h6>
+              <h6 v-if="$route.path.includes('members')" class="tw-mb-0 tw-font-bold tw-text-white tw-capitalize">Informations de l'utilisateur</h6>
             </nav>
 
             <div class="tw-flex tw-items-center tw-justify-end tw-mt-2 tw-grow sm:tw-mt-0 sm:tw-mr-6 md:tw-mr-0 lg:basis-auto">

@@ -56,6 +56,9 @@ export default {
         this.getUser()
     },
     methods: {
+        backendPdf(url) {
+            return config.app_local ? config.app_back_debug_url + "/" + url : config.app_live_url + url
+        },
         getUser(){
             const userCookie = Cookies.get('user'); // Récupère la valeur du cookie 'user'
 
