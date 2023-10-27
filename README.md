@@ -31,12 +31,12 @@ Le projet vise à concevoir et à développer une plateforme en ligne pour la ge
 
 2. Accédez au répertoire du front-end :
     ```bash
-    cd frontend
+    cd front
     ```
 
 3. Installez les dépendances nécessaires avec npm :
     ```bash
-    npm install
+    npm run install ou yarn install
     ```
 
 ### Back-end (Laravel)
@@ -57,7 +57,7 @@ Comment configurer le projet ? Voici les informations sur les fichiers de config
 
 ```bash
 # Configuration front-end (Nuxt.js)
-cd frontend
+cd front
 cp .env.example .env
 # Modifier les variables d'environnement au besoin
 
@@ -80,7 +80,7 @@ Une fois que votre application est installée et configurée, voici comment l'ut
 1. **Lancez le front-end (Nuxt.js) :**
    - Assurez-vous d'être dans le répertoire du front-end :
      ```bash
-     cd frontend
+     cd front
      ```
    - Démarrez le serveur de développement :
      ```bash
@@ -97,7 +97,7 @@ Une fois que votre application est installée et configurée, voici comment l'ut
      ```bash
      php artisan serve
      ```
-   - Votre back-end sera disponible à l'adresse `http://localhost:8000`.
+   - Votre back-end sera disponible à l'adresse `http://127.0.0.1:8000`.
 
 3. Vous pouvez maintenant utiliser l'application en interagissant avec l'interface front-end et en utilisant les fonctionnalités de gestion des membres et d'évaluation de CV.
 
