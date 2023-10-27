@@ -109,7 +109,7 @@ Une fois que votre application est installée et configurée, voici comment l'ut
 ![Capture d'écran](screenshot.png)
 ![Capture d'écran](screenshot.png)
 ![Capture d'écran](screenshot.png)
-![Capture d'écran](screenshot.png)
+![Capture d'écran]([screenshot.png](https://github.com/tdevcommunity/h23_team_13/blob/main/dashb.PNG))
 
 
 
